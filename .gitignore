@@ -1,0 +1,21 @@
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# IDE generated files
+.vs/
+.vscode/
+*.csproj
+*.sln
+*.slnx
+
+# Builds
+[Bb]uild/
+[Bb]uilds/
+
+# OS
+.DS_Store
+Thumbs.db
