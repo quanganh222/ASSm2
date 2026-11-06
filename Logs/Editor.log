@@ -1009,3 +1009,1123 @@ Memory consumption went from 0.71 GB to 0.71 GB.
 Total: 19.201300 ms (FindLiveObjects: 0.916300 ms CreateObjectMapping: 2.113100 ms MarkObjects: 15.837600 ms  DeleteObjects: 0.332700 ms)
 
 Asset Pipeline Refresh (id=48313a555a5bcab4f8ce01ae584f8439): Total: 0.013 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+SpriteAtlasPacking completed in 0.007931 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+EnemyHealthBarUI: Assign Enemy and Health Slider.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
+UnityEngine.Debug:LogError (object,UnityEngine.Object)
+Metroidvania.Gameplay.EnemyHealthBarUI:Awake () (at Assets/Scripts/Enemy/EnemyHealthBarUI.cs:16)
+
+(Filename: Assets/Scripts/Enemy/EnemyHealthBarUI.cs Line: 16)
+
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.435 ms
+	Integration:            209.367 ms
+	Integration of assets:  0.057 ms
+	Thread Wait Time:       0.026 ms
+	Total Operation Time:   211.886 ms
+Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            1.878 ms
+	Integration:            182.979 ms
+	Integration of assets:  0.002 ms
+	Thread Wait Time:       0.021 ms
+	Total Operation Time:   184.880 ms
+Unloading 21 unused Assets / (198.7 KB). Loaded Objects now: 10048.
+Memory consumption went from 0.70 GB to 0.70 GB.
+Total: 17.919200 ms (FindLiveObjects: 0.512900 ms CreateObjectMapping: 1.465900 ms MarkObjects: 15.775600 ms  DeleteObjects: 0.162900 ms)
+
+[Licensing::Client] Successfully resolved entitlement details
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2238 ms: Could not connect to server
+SpriteAtlasPacking completed in 0.007526 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.411 ms
+	Integration:            185.636 ms
+	Integration of assets:  0.063 ms
+	Thread Wait Time:       0.034 ms
+	Total Operation Time:   188.144 ms
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2238 ms: Could not connect to server
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            1.716 ms
+	Integration:            185.446 ms
+	Integration of assets:  0.002 ms
+	Thread Wait Time:       0.008 ms
+	Total Operation Time:   187.171 ms
+Unloading 1 unused Assets / (390.9 KB). Loaded Objects now: 10161.
+Memory consumption went from 0.70 GB to 0.70 GB.
+Total: 18.661400 ms (FindLiveObjects: 0.651800 ms CreateObjectMapping: 1.639700 ms MarkObjects: 16.294900 ms  DeleteObjects: 0.073300 ms)
+
+SpriteAtlasPacking completed in 0.008292 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.490 ms
+	Integration:            187.621 ms
+	Integration of assets:  0.056 ms
+	Thread Wait Time:       0.030 ms
+	Total Operation Time:   190.197 ms
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            1.724 ms
+	Integration:            199.415 ms
+	Integration of assets:  0.004 ms
+	Thread Wait Time:       0.010 ms
+	Total Operation Time:   201.154 ms
+Unloading 4 unused Assets / (199.8 KB). Loaded Objects now: 10085.
+Memory consumption went from 0.70 GB to 0.70 GB.
+Total: 20.925600 ms (FindLiveObjects: 0.689300 ms CreateObjectMapping: 1.826300 ms MarkObjects: 18.279800 ms  DeleteObjects: 0.128000 ms)
+
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2234 ms: Could not connect to server
+SpriteAtlasPacking completed in 0.007115 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            3.176 ms
+	Integration:            185.945 ms
+	Integration of assets:  0.092 ms
+	Thread Wait Time:       0.043 ms
+	Total Operation Time:   189.255 ms
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2249 ms: Could not connect to server
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            1.850 ms
+	Integration:            191.637 ms
+	Integration of assets:  0.004 ms
+	Thread Wait Time:       0.029 ms
+	Total Operation Time:   193.520 ms
+Unloading 1 unused Assets / (388.8 KB). Loaded Objects now: 10101.
+Memory consumption went from 0.70 GB to 0.70 GB.
+Total: 19.970100 ms (FindLiveObjects: 0.714600 ms CreateObjectMapping: 2.085500 ms MarkObjects: 17.095700 ms  DeleteObjects: 0.071400 ms)
+
+Asset Pipeline Refresh (id=fb324a16f227ad740b9ee8e272742983): Total: 0.016 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+SpriteAtlasPacking completed in 0.007246 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.709 ms
+	Integration:            184.117 ms
+	Integration of assets:  0.054 ms
+	Thread Wait Time:       0.008 ms
+	Total Operation Time:   186.888 ms
+Unloading 12 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            1.829 ms
+	Integration:            187.859 ms
+	Integration of assets:  0.003 ms
+	Thread Wait Time:       0.015 ms
+	Total Operation Time:   189.707 ms
+Unloading 1 unused Assets / (77.8 KB). Loaded Objects now: 10056.
+Memory consumption went from 0.70 GB to 0.70 GB.
+Total: 17.878800 ms (FindLiveObjects: 0.485500 ms CreateObjectMapping: 1.296400 ms MarkObjects: 16.015700 ms  DeleteObjects: 0.080000 ms)
+
+[Licensing::Client] Successfully resolved entitlement details
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2246 ms: Could not connect to server
+SpriteAtlasPacking completed in 0.007685 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            3.165 ms
+	Integration:            185.290 ms
+	Integration of assets:  0.053 ms
+	Thread Wait Time:       0.006 ms
+	Total Operation Time:   188.514 ms
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            1.703 ms
+	Integration:            186.379 ms
+	Integration of assets:  0.003 ms
+	Thread Wait Time:       0.033 ms
+	Total Operation Time:   188.118 ms
+Unloading 1 unused Assets / (345.7 KB). Loaded Objects now: 10089.
+Memory consumption went from 0.70 GB to 0.70 GB.
+Total: 17.707800 ms (FindLiveObjects: 0.929800 ms CreateObjectMapping: 1.346300 ms MarkObjects: 15.368100 ms  DeleteObjects: 0.062500 ms)
+
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2250 ms: Could not connect to server
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+[Licensing::Client] Successfully resolved entitlement details
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping - application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping - 200 - application/grpc 0.5246ms
+Starting: C:\Program Files\Unity\Hub\Editor\6000.5.6f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: D:/unitygame/my test
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors - application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Current configuration matches the requested one, skipping
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors - 200 - application/grpc 0.8159ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly - application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll, with 142 defines and 355 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly - 200 - application/grpc 19.8718ms
+ExitCode: 0 Duration: 1s758ms
+[ 871/1122  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[1118/1122  1s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
+Assets\Scripts\Enemy\EnemyWebShooter.cs(19,22): warning CS0414: The field 'EnemyWebShooter.waitingToFire' is assigned but its value is never used
+[1119/1122  0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll, with 142 defines and 355 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[1120/1122  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[1121/1122  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+*** Tundra build success (1.73 seconds), 5 items updated, 1122 evaluated
+Assets\Scripts\Enemy\EnemyWebShooter.cs(19,22): warning CS0414: The field 'EnemyWebShooter.waitingToFire' is assigned but its value is never used
+Reloading assemblies after forced synchronous recompile.
+Begin MonoManager ReloadAssembly
+Total cache size 251505600
+Total cache size after purge 251505600, took 00:00:00.3749933
+Native extension for WindowsStandalone target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+NullReferenceException: Object reference not set to an instance of an object
+  at UnityEditor.Graphs.Edge.WakeUp () [0x00066] in <f6970f32d894489a82a2c34d57cfaa85>:0 
+  at UnityEditor.Graphs.Graph.DoWakeUpEdges (System.Collections.Generic.List`1[T] inEdges, System.Collections.Generic.List`1[T] ok, System.Collections.Generic.List`1[T] error, System.Boolean inEdgesUsedToBeValid) [0x00028] in <f6970f32d894489a82a2c34d57cfaa85>:0 
+  at UnityEditor.Graphs.Graph.WakeUpEdges (System.Boolean clearSlotEdges) [0x0006f] in <f6970f32d894489a82a2c34d57cfaa85>:0 
+  at UnityEditor.Graphs.Graph.WakeUp (System.Boolean force) [0x000b6] in <f6970f32d894489a82a2c34d57cfaa85>:0 
+  at UnityEditor.Graphs.Graph.WakeUp () [0x00001] in <f6970f32d894489a82a2c34d57cfaa85>:0 
+  at UnityEditor.Graphs.Graph.OnEnable () [0x00001] in <f6970f32d894489a82a2c34d57cfaa85>:0 
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.078 seconds
+Domain Reload Profiling: 3522ms
+	BeginReloadAssembly (967ms)
+		DisableScriptedObjects (221ms)
+		CreateAndSetChildDomain (466ms)
+	RebuildCommonClasses (10ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (59ms)
+	LoadAllAssembliesAndSetupDomain (392ms)
+		LoadAssemblies (139ms)
+		AnalyzeDomain (240ms)
+			TypeCache.Refresh (12ms)
+			BuildScriptInfoCaches (199ms)
+			ResolveRequiredComponents (27ms)
+	FinalizeReload (2079ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (212ms)
+			ProcessInitializeOnLoadAttributes (537ms)
+			ProcessInitializeOnLoadMethodAttributes (163ms)
+			AfterProcessingInitializeOnLoad (7ms)
+		AwakeInstancesAfterBackupRestoration (626ms)
+
+Asset Pipeline Refresh (id=176f09d613a0c70469f12aabafb358e6): Total: 5.888 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=2271 ms
+		Asset DB Callback time: managed=69 ms, native=6 ms
+		Scripting: domain reloads=1, domain reload time=1507 ms, compile time=2032 ms, other=0 ms
+		Project Asset Count: scripts=1611, non-scripts=3198
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 4.513ms
+	ApplyChangesToAssetFolders: 0.898ms
+	Scan: 28.768ms
+	Collect global state as custom dependencies: 4.046ms
+	OnSourceAssetsModified: 1.220ms
+	ProcessAssetsWithTransientArtifactChanges: 6.542ms
+	CategorizeAssets: 58.950ms
+	CompileScripts: 2032.373ms
+	ImportOutOfDateAssets: 2130.455ms (2094.241ms without children)
+		CollectScriptTypesHashes: 1.223ms
+		ReloadNativeAssets: 1.083ms
+		UnloadImportedAssets: 0.260ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.704ms
+		ImportSchedulerStart: 34.133ms
+	PostProcessAllAssets: 69.543ms
+		XRBuildSystem.XRAssetImported 0.353ms
+		MonoPostProcessAllAssets: 68.745ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 9.864ms
+			SyncVS.PostprocessSyncProject 9.460ms
+			AssetChangedListener.OnPostprocessAllAssets 6.590ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 6.136ms
+			AssetPostprocessor.OnPostprocessAllAssets 4.054ms
+			SpriteSlicePostprocessor.OnPostprocessAllAssets 2.424ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 1.983ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 1.828ms
+			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 1.489ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 1.193ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 1.068ms
+			SpriteShapeAssetPostProcessor.OnPostprocessAllAssets 1.012ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 0.959ms
+			MaterialPostprocessor.OnPostprocessAllAssets 0.868ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.762ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.713ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.646ms
+			SpriteEditorTexturePostprocessor.OnPostprocessAllAssets 0.642ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.561ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.448ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.375ms
+			InputActionJsonNameModifierAssetProcessor.OnPostprocessAllAssets 0.322ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.321ms
+			PostProcessor.OnPostprocessAllAssets 0.319ms
+			UVCSAssetPostprocessor.OnPostprocessAllAssets 0.308ms
+			SampleDependencyImporterPostProcessor.OnPostprocessAllAssets 0.268ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.266ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 0.231ms
+			AssetEvents.OnPostprocessAllAssets 0.226ms
+			SpriteLibraryAssetPostprocessor.OnPostprocessAllAssets 0.214ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.161ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.155ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.146ms
+			SamplePostprocessor.OnPostprocessAllAssets 0.145ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.141ms
+			PSDImportPostProcessor.OnPostprocessAllAssets 0.128ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.120ms
+			AssetReloadNotifier.OnPostprocessAllAssets 0.100ms
+			AssetProcessor.OnPostprocessAllAssets 0.087ms
+			PSDImporterAssetPostProcessor.OnPostprocessAllAssets 0.084ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.083ms
+	PostAssetChangesProfiler: 3.517ms
+	GatherAllCurrentPrimaryImportResultRevisions: 1.053ms
+	UnloadStreamsBegin: 0.106ms
+	PersistCurrentRevisions: 0.159ms
+	GenerateScriptTypeHashes: 2.708ms
+	GenerateScriptTypeSerializationHashes: 4.423ms
+	Untracked: 1540.712ms
+
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+SpriteAtlasPacking completed in 0.006968 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            51.886 ms
+	Integration:            228.746 ms
+	Integration of assets:  0.143 ms
+	Thread Wait Time:       -0.016 ms
+	Total Operation Time:   280.759 ms
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2252 ms: Could not connect to server
+Unloading 15 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            3.359 ms
+	Integration:            200.840 ms
+	Integration of assets:  0.005 ms
+	Thread Wait Time:       0.029 ms
+	Total Operation Time:   204.233 ms
+Unloading 27 unused Assets / (399.5 KB). Loaded Objects now: 10159.
+Memory consumption went from 0.71 GB to 0.71 GB.
+Total: 15.712300 ms (FindLiveObjects: 0.483800 ms CreateObjectMapping: 1.905700 ms MarkObjects: 13.184100 ms  DeleteObjects: 0.136800 ms)
+
+[Licensing::Client] Successfully resolved entitlement details
+SpriteAtlasPacking completed in 0.007972 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.506 ms
+	Integration:            188.573 ms
+	Integration of assets:  0.050 ms
+	Thread Wait Time:       0.010 ms
+	Total Operation Time:   191.139 ms
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2237 ms: Could not connect to server
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            1.673 ms
+	Integration:            197.672 ms
+	Integration of assets:  0.004 ms
+	Thread Wait Time:       0.035 ms
+	Total Operation Time:   199.383 ms
+Unloading 1 unused Assets / (375.7 KB). Loaded Objects now: 10151.
+Memory consumption went from 0.71 GB to 0.71 GB.
+Total: 15.288500 ms (FindLiveObjects: 0.505200 ms CreateObjectMapping: 1.468600 ms MarkObjects: 13.255500 ms  DeleteObjects: 0.057900 ms)
+
+SpriteAtlasPacking completed in 0.007518 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.578 ms
+	Integration:            213.505 ms
+	Integration of assets:  0.054 ms
+	Thread Wait Time:       0.012 ms
+	Total Operation Time:   216.149 ms
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2238 ms: Could not connect to server
+Unloading 17 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            1.800 ms
+	Integration:            197.539 ms
+	Integration of assets:  0.002 ms
+	Thread Wait Time:       0.012 ms
+	Total Operation Time:   199.353 ms
+Unloading 2 unused Assets / (454.1 KB). Loaded Objects now: 10210.
+Memory consumption went from 0.72 GB to 0.71 GB.
+Total: 17.403300 ms (FindLiveObjects: 0.516900 ms CreateObjectMapping: 1.306700 ms MarkObjects: 15.418200 ms  DeleteObjects: 0.160000 ms)
+
+[Licensing::Client] Successfully resolved entitlement details
+SpriteAtlasPacking completed in 0.009455 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.643 ms
+	Integration:            205.251 ms
+	Integration of assets:  0.058 ms
+	Thread Wait Time:       0.009 ms
+	Total Operation Time:   207.962 ms
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.275 ms
+	Integration:            188.663 ms
+	Integration of assets:  0.008 ms
+	Thread Wait Time:       0.036 ms
+	Total Operation Time:   190.981 ms
+Unloading 5 unused Assets / (313.0 KB). Loaded Objects now: 10132.
+Memory consumption went from 0.74 GB to 0.74 GB.
+Total: 17.013200 ms (FindLiveObjects: 0.498900 ms CreateObjectMapping: 1.369200 ms MarkObjects: 14.997800 ms  DeleteObjects: 0.145500 ms)
+
+[Licensing::Client] Successfully resolved entitlement details
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2246 ms: Could not connect to server
+SpriteAtlasPacking completed in 0.007892 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.795 ms
+	Integration:            195.679 ms
+	Integration of assets:  0.055 ms
+	Thread Wait Time:       0.006 ms
+	Total Operation Time:   198.534 ms
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.056 ms
+	Integration:            183.579 ms
+	Integration of assets:  0.004 ms
+	Thread Wait Time:       0.040 ms
+	Total Operation Time:   185.679 ms
+Unloading 1 unused Assets / (117.5 KB). Loaded Objects now: 10111.
+Memory consumption went from 0.72 GB to 0.72 GB.
+Total: 17.114900 ms (FindLiveObjects: 0.520400 ms CreateObjectMapping: 1.282200 ms MarkObjects: 15.245900 ms  DeleteObjects: 0.065000 ms)
+
+SpriteAtlasPacking completed in 0.007476 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.754 ms
+	Integration:            182.692 ms
+	Integration of assets:  0.065 ms
+	Thread Wait Time:       0.015 ms
+	Total Operation Time:   185.526 ms
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2242 ms: Could not connect to server
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            1.843 ms
+	Integration:            183.600 ms
+	Integration of assets:  0.004 ms
+	Thread Wait Time:       0.005 ms
+	Total Operation Time:   185.453 ms
+Unloading 1 unused Assets / (107.1 KB). Loaded Objects now: 10107.
+Memory consumption went from 0.72 GB to 0.72 GB.
+Total: 15.696700 ms (FindLiveObjects: 0.526200 ms CreateObjectMapping: 1.334700 ms MarkObjects: 13.773800 ms  DeleteObjects: 0.060400 ms)
+
+SpriteAtlasPacking completed in 0.007228 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.884 ms
+	Integration:            190.044 ms
+	Integration of assets:  0.054 ms
+	Thread Wait Time:       0.012 ms
+	Total Operation Time:   192.993 ms
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.993 ms
+	Integration:            182.151 ms
+	Integration of assets:  0.005 ms
+	Thread Wait Time:       0.036 ms
+	Total Operation Time:   185.185 ms
+Unloading 1 unused Assets / (0.8 MB). Loaded Objects now: 10164.
+Memory consumption went from 0.73 GB to 0.73 GB.
+Total: 16.531900 ms (FindLiveObjects: 0.635300 ms CreateObjectMapping: 1.450300 ms MarkObjects: 14.172500 ms  DeleteObjects: 0.272400 ms)
+
+SpriteAtlasPacking completed in 0.007185 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.905 ms
+	Integration:            184.522 ms
+	Integration of assets:  0.062 ms
+	Thread Wait Time:       0.035 ms
+	Total Operation Time:   187.525 ms
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2243 ms: Could not connect to server
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            1.854 ms
+	Integration:            186.848 ms
+	Integration of assets:  0.005 ms
+	Thread Wait Time:       0.005 ms
+	Total Operation Time:   188.712 ms
+Unloading 1 unused Assets / (0.8 MB). Loaded Objects now: 10142.
+Memory consumption went from 0.73 GB to 0.73 GB.
+Total: 16.782500 ms (FindLiveObjects: 0.621800 ms CreateObjectMapping: 1.316900 ms MarkObjects: 14.574200 ms  DeleteObjects: 0.268000 ms)
+
+SpriteAtlasPacking completed in 0.007886 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            3.322 ms
+	Integration:            191.719 ms
+	Integration of assets:  0.059 ms
+	Thread Wait Time:       0.004 ms
+	Total Operation Time:   195.103 ms
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            1.972 ms
+	Integration:            186.675 ms
+	Integration of assets:  0.004 ms
+	Thread Wait Time:       0.040 ms
+	Total Operation Time:   188.691 ms
+Unloading 1 unused Assets / (0.9 MB). Loaded Objects now: 10169.
+Memory consumption went from 0.73 GB to 0.73 GB.
+Total: 16.535900 ms (FindLiveObjects: 0.519600 ms CreateObjectMapping: 1.473300 ms MarkObjects: 14.152700 ms  DeleteObjects: 0.388500 ms)
+
+SpriteAtlasPacking completed in 0.006953 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.757 ms
+	Integration:            185.469 ms
+	Integration of assets:  0.047 ms
+	Thread Wait Time:       0.007 ms
+	Total Operation Time:   188.280 ms
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2249 ms: Could not connect to server
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.792 ms
+	Integration:            184.156 ms
+	Integration of assets:  0.003 ms
+	Thread Wait Time:       0.012 ms
+	Total Operation Time:   186.964 ms
+Unloading 1 unused Assets / (0.9 MB). Loaded Objects now: 10173.
+Memory consumption went from 0.73 GB to 0.73 GB.
+Total: 17.053900 ms (FindLiveObjects: 0.509900 ms CreateObjectMapping: 1.362700 ms MarkObjects: 14.904700 ms  DeleteObjects: 0.275500 ms)
+
+SpriteAtlasPacking completed in 0.007721 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.745 ms
+	Integration:            204.813 ms
+	Integration of assets:  0.054 ms
+	Thread Wait Time:       0.028 ms
+	Total Operation Time:   207.640 ms
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.638 ms
+	Integration:            186.623 ms
+	Integration of assets:  0.005 ms
+	Thread Wait Time:       0.063 ms
+	Total Operation Time:   189.329 ms
+Unloading 1 unused Assets / (0.8 MB). Loaded Objects now: 10176.
+Memory consumption went from 0.73 GB to 0.73 GB.
+Total: 16.451900 ms (FindLiveObjects: 0.645400 ms CreateObjectMapping: 1.462000 ms MarkObjects: 14.078800 ms  DeleteObjects: 0.264600 ms)
+
+[Licensing::Client] Successfully resolved entitlement details
+SpriteAtlasPacking completed in 0.007263 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            3.230 ms
+	Integration:            188.293 ms
+	Integration of assets:  0.062 ms
+	Thread Wait Time:       0.014 ms
+	Total Operation Time:   191.599 ms
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2244 ms: Could not connect to server
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.276 ms
+	Integration:            191.958 ms
+	Integration of assets:  0.003 ms
+	Thread Wait Time:       0.007 ms
+	Total Operation Time:   194.243 ms
+Unloading 1 unused Assets / (0.5 MB). Loaded Objects now: 10245.
+Memory consumption went from 0.74 GB to 0.73 GB.
+Total: 17.769700 ms (FindLiveObjects: 0.548400 ms CreateObjectMapping: 1.497700 ms MarkObjects: 15.575400 ms  DeleteObjects: 0.146900 ms)
+
+SpriteAtlasPacking completed in 0.008778 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            3.180 ms
+	Integration:            194.582 ms
+	Integration of assets:  0.063 ms
+	Thread Wait Time:       0.033 ms
+	Total Operation Time:   197.857 ms
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2238 ms: Could not connect to server
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            1.935 ms
+	Integration:            187.827 ms
+	Integration of assets:  0.004 ms
+	Thread Wait Time:       0.006 ms
+	Total Operation Time:   189.772 ms
+Unloading 4 unused Assets / (0.7 MB). Loaded Objects now: 10209.
+Memory consumption went from 0.73 GB to 0.73 GB.
+Total: 19.203800 ms (FindLiveObjects: 0.551700 ms CreateObjectMapping: 1.345200 ms MarkObjects: 17.095000 ms  DeleteObjects: 0.210700 ms)
+
+SpriteAtlasPacking completed in 0.007253 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.948 ms
+	Integration:            205.715 ms
+	Integration of assets:  0.083 ms
+	Thread Wait Time:       0.012 ms
+	Total Operation Time:   208.760 ms
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2256 ms: Could not connect to server
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            1.948 ms
+	Integration:            193.784 ms
+	Integration of assets:  0.008 ms
+	Thread Wait Time:       0.030 ms
+	Total Operation Time:   195.769 ms
+Unloading 1 unused Assets / (0.9 MB). Loaded Objects now: 10269.
+Memory consumption went from 0.74 GB to 0.74 GB.
+Total: 17.946000 ms (FindLiveObjects: 0.517100 ms CreateObjectMapping: 1.344000 ms MarkObjects: 15.734600 ms  DeleteObjects: 0.348900 ms)
+
+[Licensing::Client] Successfully resolved entitlement details
+SpriteAtlasPacking completed in 0.007542 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            3.078 ms
+	Integration:            206.374 ms
+	Integration of assets:  0.058 ms
+	Thread Wait Time:       0.028 ms
+	Total Operation Time:   209.538 ms
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.129 ms
+	Integration:            190.518 ms
+	Integration of assets:  0.002 ms
+	Thread Wait Time:       0.013 ms
+	Total Operation Time:   192.662 ms
+Unloading 4 unused Assets / (0.8 MB). Loaded Objects now: 10214.
+Memory consumption went from 0.73 GB to 0.73 GB.
+Total: 16.869900 ms (FindLiveObjects: 0.579700 ms CreateObjectMapping: 1.309000 ms MarkObjects: 14.685300 ms  DeleteObjects: 0.294200 ms)
+
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2247 ms: Could not connect to server
+SpriteAtlasPacking completed in 0.007283 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            3.162 ms
+	Integration:            186.623 ms
+	Integration of assets:  0.054 ms
+	Thread Wait Time:       0.006 ms
+	Total Operation Time:   189.845 ms
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.810 ms
+	Integration:            184.092 ms
+	Integration of assets:  0.003 ms
+	Thread Wait Time:       0.011 ms
+	Total Operation Time:   186.916 ms
+Unloading 1 unused Assets / (0.9 MB). Loaded Objects now: 10215.
+Memory consumption went from 0.73 GB to 0.73 GB.
+Total: 18.123000 ms (FindLiveObjects: 0.588600 ms CreateObjectMapping: 1.489800 ms MarkObjects: 15.674600 ms  DeleteObjects: 0.368400 ms)
+
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2249 ms: Could not connect to server
+SpriteAtlasPacking completed in 0.007655 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            3.091 ms
+	Integration:            204.828 ms
+	Integration of assets:  0.051 ms
+	Thread Wait Time:       0.002 ms
+	Total Operation Time:   207.973 ms
+Unloading 36 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.267 ms
+	Integration:            185.167 ms
+	Integration of assets:  0.002 ms
+	Thread Wait Time:       0.008 ms
+	Total Operation Time:   187.445 ms
+Unloading 15 unused Assets / (370.9 KB). Loaded Objects now: 10321.
+Memory consumption went from 0.74 GB to 0.74 GB.
+Total: 16.736700 ms (FindLiveObjects: 0.532200 ms CreateObjectMapping: 1.346400 ms MarkObjects: 14.662700 ms  DeleteObjects: 0.193900 ms)
+
+[Licensing::Client] Successfully resolved entitlement details
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2227 ms: Could not connect to server
+SpriteAtlasPacking completed in 0.007627 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            3.230 ms
+	Integration:            190.466 ms
+	Integration of assets:  0.059 ms
+	Thread Wait Time:       0.040 ms
+	Total Operation Time:   193.795 ms
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2257 ms: Could not connect to server
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.520 ms
+	Integration:            187.444 ms
+	Integration of assets:  0.004 ms
+	Thread Wait Time:       0.008 ms
+	Total Operation Time:   189.976 ms
+Unloading 1 unused Assets / (506.5 KB). Loaded Objects now: 10410.
+Memory consumption went from 0.74 GB to 0.74 GB.
+Total: 17.113300 ms (FindLiveObjects: 0.542200 ms CreateObjectMapping: 1.394200 ms MarkObjects: 15.014500 ms  DeleteObjects: 0.160200 ms)
+
+SpriteAtlasPacking completed in 0.007864 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            3.226 ms
+	Integration:            188.801 ms
+	Integration of assets:  0.072 ms
+	Thread Wait Time:       0.013 ms
+	Total Operation Time:   192.112 ms
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2247 ms: Could not connect to server
+Unloading 15 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.130 ms
+	Integration:            185.213 ms
+	Integration of assets:  0.002 ms
+	Thread Wait Time:       0.054 ms
+	Total Operation Time:   187.399 ms
+Unloading 2 unused Assets / (389.0 KB). Loaded Objects now: 10387.
+Memory consumption went from 0.74 GB to 0.74 GB.
+Total: 28.545300 ms (FindLiveObjects: 0.737000 ms CreateObjectMapping: 1.742000 ms MarkObjects: 25.959600 ms  DeleteObjects: 0.104800 ms)
+
+SpriteAtlasPacking completed in 0.007753 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            3.354 ms
+	Integration:            189.193 ms
+	Integration of assets:  0.054 ms
+	Thread Wait Time:       0.005 ms
+	Total Operation Time:   192.606 ms
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2245 ms: Could not connect to server
+Unloading 27 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.361 ms
+	Integration:            189.308 ms
+	Integration of assets:  0.007 ms
+	Thread Wait Time:       0.036 ms
+	Total Operation Time:   191.712 ms
+Unloading 1 unused Assets / (0.8 MB). Loaded Objects now: 10396.
+Memory consumption went from 0.74 GB to 0.74 GB.
+Total: 17.167100 ms (FindLiveObjects: 0.646100 ms CreateObjectMapping: 1.330200 ms MarkObjects: 14.968600 ms  DeleteObjects: 0.220600 ms)
+
+[Worker2] Imported GUID: f8dc29ee9a3cedd4c9ffca10122b5bb5 - Path: Assets/Scripts/Enemy/EnemyChase.cs - Importer: PreviewImporter -> (ImportResultId: 'ff43fb1b30faf94b252c395a0e7730c7') in 0.0152568 seconds
+SpriteAtlasPacking completed in 0.008639 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            3.414 ms
+	Integration:            208.049 ms
+	Integration of assets:  0.052 ms
+	Thread Wait Time:       0.008 ms
+	Total Operation Time:   211.524 ms
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2242 ms: Could not connect to server
+Unloading 16 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.128 ms
+	Integration:            193.382 ms
+	Integration of assets:  0.002 ms
+	Thread Wait Time:       0.013 ms
+	Total Operation Time:   195.526 ms
+Unloading 2 unused Assets / (0.6 MB). Loaded Objects now: 10432.
+Memory consumption went from 0.74 GB to 0.74 GB.
+Total: 16.614900 ms (FindLiveObjects: 0.535800 ms CreateObjectMapping: 1.533100 ms MarkObjects: 14.352400 ms  DeleteObjects: 0.191900 ms)
+
+[Licensing::Client] Successfully resolved entitlement details
+SpriteAtlasPacking completed in 0.007873 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.980 ms
+	Integration:            211.213 ms
+	Integration of assets:  0.058 ms
+	Thread Wait Time:       0.037 ms
+	Total Operation Time:   214.288 ms
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2228 ms: Could not connect to server
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.390 ms
+	Integration:            191.830 ms
+	Integration of assets:  0.003 ms
+	Thread Wait Time:       0.012 ms
+	Total Operation Time:   194.234 ms
+Unloading 3 unused Assets / (0.7 MB). Loaded Objects now: 10423.
+Memory consumption went from 0.75 GB to 0.75 GB.
+Total: 17.773500 ms (FindLiveObjects: 0.539700 ms CreateObjectMapping: 1.313200 ms MarkObjects: 15.670100 ms  DeleteObjects: 0.249500 ms)
+
+SpriteAtlasPacking completed in 0.007228 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            3.144 ms
+	Integration:            189.057 ms
+	Integration of assets:  0.052 ms
+	Thread Wait Time:       0.010 ms
+	Total Operation Time:   192.264 ms
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2241 ms: Could not connect to server
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.272 ms
+	Integration:            202.717 ms
+	Integration of assets:  0.003 ms
+	Thread Wait Time:       0.016 ms
+	Total Operation Time:   205.007 ms
+Unloading 2 unused Assets / (0.7 MB). Loaded Objects now: 10404.
+Memory consumption went from 0.75 GB to 0.75 GB.
+Total: 18.618200 ms (FindLiveObjects: 0.523100 ms CreateObjectMapping: 1.350800 ms MarkObjects: 16.485500 ms  DeleteObjects: 0.257300 ms)
+
+[Licensing::Client] Successfully resolved entitlement details
+SpriteAtlasPacking completed in 0.007563 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.986 ms
+	Integration:            189.159 ms
+	Integration of assets:  0.070 ms
+	Thread Wait Time:       0.038 ms
+	Total Operation Time:   192.253 ms
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2251 ms: Could not connect to server
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.315 ms
+	Integration:            210.968 ms
+	Integration of assets:  0.002 ms
+	Thread Wait Time:       0.013 ms
+	Total Operation Time:   213.299 ms
+Unloading 1 unused Assets / (0.6 MB). Loaded Objects now: 10423.
+Memory consumption went from 0.75 GB to 0.75 GB.
+Total: 18.874800 ms (FindLiveObjects: 0.664700 ms CreateObjectMapping: 1.418900 ms MarkObjects: 16.509400 ms  DeleteObjects: 0.279200 ms)
+
+SpriteAtlasPacking completed in 0.007539 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.890 ms
+	Integration:            188.074 ms
+	Integration of assets:  0.050 ms
+	Thread Wait Time:       0.010 ms
+	Total Operation Time:   191.024 ms
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2247 ms: Could not connect to server
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.394 ms
+	Integration:            198.485 ms
+	Integration of assets:  0.004 ms
+	Thread Wait Time:       0.040 ms
+	Total Operation Time:   200.923 ms
+Unloading 1 unused Assets / (0.9 MB). Loaded Objects now: 10418.
+Memory consumption went from 0.75 GB to 0.75 GB.
+Total: 16.922900 ms (FindLiveObjects: 0.601400 ms CreateObjectMapping: 1.450600 ms MarkObjects: 14.668600 ms  DeleteObjects: 0.200900 ms)
+
+SpriteAtlasPacking completed in 0.007696 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.933 ms
+	Integration:            188.634 ms
+	Integration of assets:  0.063 ms
+	Thread Wait Time:       0.015 ms
+	Total Operation Time:   191.644 ms
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2254 ms: Could not connect to server
+Unloading 13 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.458 ms
+	Integration:            200.071 ms
+	Integration of assets:  0.007 ms
+	Thread Wait Time:       0.038 ms
+	Total Operation Time:   202.573 ms
+Unloading 2 unused Assets / (0.8 MB). Loaded Objects now: 10370.
+Memory consumption went from 0.74 GB to 0.74 GB.
+Total: 19.812300 ms (FindLiveObjects: 0.572900 ms CreateObjectMapping: 1.313100 ms MarkObjects: 17.667900 ms  DeleteObjects: 0.256100 ms)
+
+[Licensing::Client] Successfully resolved entitlement details
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+[Licensing::Client] Successfully resolved entitlement details
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping - application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/Ping'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/Ping - 200 - application/grpc 0.4644ms
+Starting: C:\Program Files\Unity\Hub\Editor\6000.5.6f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: D:/unitygame/my test
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors - application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+info: Unity.ILPP.Runner.PostProcessingAssemblyLoadContext[0]
+      Current configuration matches the requested one, skipping
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/ConfigurePostProcessors'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/ConfigurePostProcessors - 200 - application/grpc 0.9075ms
+info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
+      Request starting HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly - application/grpc -
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
+      Executing endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll, with 142 defines and 355 references
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running Unity.Jobs.CodeGen.JobsILPostProcessor
+info: Unity.ILPP.Runner.PostProcessingPipeline[0]
+      running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
+      Executed endpoint 'gRPC - /UnityILPP.PostProcessing/PostProcessAssembly'
+info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
+      Request finished HTTP/2 POST http://ilpp/UnityILPP.PostProcessing/PostProcessAssembly - 200 - application/grpc 21.6124ms
+ExitCode: 0 Duration: 1s767ms
+[ 871/1122  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[1118/1122  1s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
+Assets\Scripts\Enemy\EnemyWebShooter.cs(19,22): warning CS0414: The field 'EnemyWebShooter.waitingToFire' is assigned but its value is never used
+[1119/1122  0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll, with 142 defines and 355 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[1120/1122  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[1121/1122  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+*** Tundra build success (1.74 seconds), 5 items updated, 1122 evaluated
+Assets\Scripts\Enemy\EnemyWebShooter.cs(19,22): warning CS0414: The field 'EnemyWebShooter.waitingToFire' is assigned but its value is never used
+Reloading assemblies after forced synchronous recompile.
+Begin MonoManager ReloadAssembly
+Total cache size 251505600
+Total cache size after purge 251505600, took 00:00:00.4024375
+Native extension for WindowsStandalone target not found
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+NullReferenceException: Object reference not set to an instance of an object
+  at UnityEditor.Graphs.Edge.WakeUp () [0x00066] in <f6970f32d894489a82a2c34d57cfaa85>:0 
+  at UnityEditor.Graphs.Graph.DoWakeUpEdges (System.Collections.Generic.List`1[T] inEdges, System.Collections.Generic.List`1[T] ok, System.Collections.Generic.List`1[T] error, System.Boolean inEdgesUsedToBeValid) [0x00028] in <f6970f32d894489a82a2c34d57cfaa85>:0 
+  at UnityEditor.Graphs.Graph.WakeUpEdges (System.Boolean clearSlotEdges) [0x0006f] in <f6970f32d894489a82a2c34d57cfaa85>:0 
+  at UnityEditor.Graphs.Graph.WakeUp (System.Boolean force) [0x000b6] in <f6970f32d894489a82a2c34d57cfaa85>:0 
+  at UnityEditor.Graphs.Graph.WakeUp () [0x00001] in <f6970f32d894489a82a2c34d57cfaa85>:0 
+  at UnityEditor.Graphs.Graph.OnEnable () [0x00001] in <f6970f32d894489a82a2c34d57cfaa85>:0 
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.139 seconds
+Domain Reload Profiling: 3637ms
+	BeginReloadAssembly (1026ms)
+		DisableScriptedObjects (235ms)
+		CreateAndSetChildDomain (518ms)
+	RebuildCommonClasses (10ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (60ms)
+	LoadAllAssembliesAndSetupDomain (385ms)
+		LoadAssemblies (142ms)
+		AnalyzeDomain (236ms)
+			TypeCache.Refresh (12ms)
+			BuildScriptInfoCaches (196ms)
+			ResolveRequiredComponents (26ms)
+	FinalizeReload (2140ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (209ms)
+			ProcessInitializeOnLoadAttributes (532ms)
+			ProcessInitializeOnLoadMethodAttributes (164ms)
+			AfterProcessingInitializeOnLoad (7ms)
+		AwakeInstancesAfterBackupRestoration (692ms)
+Refreshing native plugins compatible for Editor in 2.00 ms, found 5 plugins.
+
+Asset Pipeline Refresh (id=5084573efae969b449ee2c105ab4b25f): Total: 6.013 seconds - Initiated by RefreshV2(AllowForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=2338 ms
+		Asset DB Callback time: managed=72 ms, native=7 ms
+		Scripting: domain reloads=1, domain reload time=1566 ms, compile time=2028 ms, other=0 ms
+		Project Asset Count: scripts=1611, non-scripts=3198
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 4.346ms
+	ApplyChangesToAssetFolders: 0.851ms
+	Scan: 28.965ms
+	Collect global state as custom dependencies: 3.800ms
+	OnSourceAssetsModified: 1.566ms
+	ProcessAssetsWithTransientArtifactChanges: 7.067ms
+	CategorizeAssets: 61.457ms
+	CompileScripts: 2028.193ms
+	ImportOutOfDateAssets: 2191.091ms (2156.076ms without children)
+		CollectScriptTypesHashes: 1.624ms
+		ReloadNativeAssets: 1.054ms
+		UnloadImportedAssets: 0.307ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.723ms
+		ImportSchedulerStart: 32.893ms
+	PostProcessAllAssets: 71.888ms
+		XRBuildSystem.XRAssetImported 0.361ms
+		PostProcessCallbackCreateDeferredMaterials 0.086ms
+		MonoPostProcessAllAssets: 70.926ms
+			SyncVS.PostprocessSyncProject 11.000ms
+			UniversalRenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 10.257ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 6.126ms
+			AssetChangedListener.OnPostprocessAllAssets 5.923ms
+			AssetPostprocessor.OnPostprocessAllAssets 4.237ms
+			SpriteSlicePostprocessor.OnPostprocessAllAssets 2.583ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 2.404ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 1.751ms
+			ShaderGraphAssetPostProcessor.OnPostprocessAllAssets 1.586ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 1.215ms
+			ProjectSettingsPostprocessor.OnPostprocessAllAssets 1.207ms
+			MaterialPostprocessor.OnPostprocessAllAssets 0.999ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 0.983ms
+			SpriteEditorTexturePostprocessor.OnPostprocessAllAssets 0.742ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.735ms
+			SpriteShapeAssetPostProcessor.OnPostprocessAllAssets 0.627ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.572ms
+			TMPro_TexturePostProcessor.OnPostprocessAllAssets 0.546ms
+			InputActionAssetPostprocessor.OnPostprocessAllAssets 0.465ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.400ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.392ms
+			InputActionJsonNameModifierAssetProcessor.OnPostprocessAllAssets 0.356ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.336ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 0.329ms
+			AssetEvents.OnPostprocessAllAssets 0.323ms
+			UVCSAssetPostprocessor.OnPostprocessAllAssets 0.322ms
+			ShaderReflectionAssetPostProcessor.OnPostprocessAllAssets 0.315ms
+			SampleDependencyImporterPostProcessor.OnPostprocessAllAssets 0.275ms
+			PSDImportPostProcessor.OnPostprocessAllAssets 0.243ms
+			PostProcessor.OnPostprocessAllAssets 0.216ms
+			SpriteLibraryAssetPostprocessor.OnPostprocessAllAssets 0.205ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.186ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.160ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.155ms
+			SamplePostprocessor.OnPostprocessAllAssets 0.149ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.143ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.121ms
+			AssetReloadNotifier.OnPostprocessAllAssets 0.105ms
+			PSDImporterAssetPostProcessor.OnPostprocessAllAssets 0.084ms
+			AssetProcessor.OnPostprocessAllAssets 0.083ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.076ms
+	PostAssetChangesProfiler: 4.286ms
+	GatherAllCurrentPrimaryImportResultRevisions: 0.979ms
+	UnloadStreamsBegin: 0.161ms
+	PersistCurrentRevisions: 0.175ms
+	GenerateScriptTypeHashes: 2.769ms
+	GenerateScriptTypeSerializationHashes: 4.509ms
+	Untracked: 1598.551ms
+
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Client] Successfully resolved entitlement details
+SpriteAtlasPacking completed in 0.007365 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            51.842 ms
+	Integration:            238.969 ms
+	Integration of assets:  0.112 ms
+	Thread Wait Time:       -0.015 ms
+	Total Operation Time:   290.909 ms
+Unloading 12 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            3.283 ms
+	Integration:            191.332 ms
+	Integration of assets:  0.006 ms
+	Thread Wait Time:       0.027 ms
+	Total Operation Time:   194.649 ms
+Unloading 30 unused Assets / (0.6 MB). Loaded Objects now: 10372.
+Memory consumption went from 0.74 GB to 0.74 GB.
+Total: 17.381100 ms (FindLiveObjects: 0.535500 ms CreateObjectMapping: 1.312100 ms MarkObjects: 15.265200 ms  DeleteObjects: 0.266600 ms)
+
+[Licensing::Client] Successfully resolved entitlement details
+SpriteAtlasPacking completed in 0.007585 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2254 ms: Could not connect to server
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.875 ms
+	Integration:            191.715 ms
+	Integration of assets:  0.066 ms
+	Thread Wait Time:       0.034 ms
+	Total Operation Time:   194.691 ms
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.587 ms
+	Integration:            202.345 ms
+	Integration of assets:  0.009 ms
+	Thread Wait Time:       0.026 ms
+	Total Operation Time:   204.966 ms
+Unloading 1 unused Assets / (0.6 MB). Loaded Objects now: 10405.
+Memory consumption went from 0.75 GB to 0.75 GB.
+Total: 16.669400 ms (FindLiveObjects: 0.723300 ms CreateObjectMapping: 1.526600 ms MarkObjects: 14.220900 ms  DeleteObjects: 0.196500 ms)
+
+SpriteAtlasPacking completed in 0.007750 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            3.138 ms
+	Integration:            190.091 ms
+	Integration of assets:  0.054 ms
+	Thread Wait Time:       0.005 ms
+	Total Operation Time:   193.288 ms
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2255 ms: Could not connect to server
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.354 ms
+	Integration:            189.823 ms
+	Integration of assets:  0.007 ms
+	Thread Wait Time:       0.037 ms
+	Total Operation Time:   192.220 ms
+Unloading 1 unused Assets / (378.8 KB). Loaded Objects now: 10391.
+Memory consumption went from 0.74 GB to 0.74 GB.
+Total: 16.712000 ms (FindLiveObjects: 0.567400 ms CreateObjectMapping: 1.376100 ms MarkObjects: 14.704500 ms  DeleteObjects: 0.062500 ms)
+
+SpriteAtlasPacking completed in 0.007715 sec
+Entering Playmode with Reload Domain disabled.
+If you experience any issues, please disable "Enter Play Mode Options" in Editor Settings
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            4.143 ms
+	Integration:            187.340 ms
+	Integration of assets:  0.061 ms
+	Thread Wait Time:       0.010 ms
+	Total Operation Time:   191.554 ms
+Curl error 7: Failed to connect to config.uca.cloud.unity3d.com port 443 after 2228 ms: Could not connect to server
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            2.995 ms
+	Integration:            193.247 ms
+	Integration of assets:  0.004 ms
+	Thread Wait Time:       0.012 ms
+	Total Operation Time:   196.258 ms
+Unloading 1 unused Assets / (437.6 KB). Loaded Objects now: 10395.
+Memory consumption went from 0.75 GB to 0.75 GB.
+Total: 16.648800 ms (FindLiveObjects: 0.809800 ms CreateObjectMapping: 1.454600 ms MarkObjects: 14.325800 ms  DeleteObjects: 0.057100 ms)
+

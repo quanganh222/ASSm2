@@ -1,0 +1,57 @@
+[2026-11-06T11:56:20.848Z][INFO] Command-line: 'C:\\Program Files\\Unity\\Hub\\Editor\\6000.5.6f1\\Editor\\Data\\Resources\\PackageManager\\Server\\UnityPackageManager.exe' server -s 44676 --ipc-path Unity-Upm-44676 -l 2 --log-file 'D:\\unitygame\\my test/Logs/upm.log'
+[2026-11-06T11:56:20.895Z][INFO] IPC server started (IPC path=Unity-Upm-44676).
+[2026-11-06T11:56:20.896Z][INFO] Hint: To connect to this UPM instance, launch Unity with the command-line parameter -upmIpcPath Upm-44676.
+[2026-11-06T11:56:36.311Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-11-06T11:56:36.513Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-11-06T11:56:36.539Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-11-06T11:56:36.869Z][INFO] config:project:get-registries --> 200 (356 ms)
+[2026-11-06T11:56:37.286Z][INFO] project:list-packages --> 200 (975 ms)
+[2026-11-06T11:56:37.291Z][INFO] project:list-packages --> 200 (752 ms)
+[2026-11-06T11:56:50.701Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-11-06T11:56:50.720Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-11-06T11:56:50.985Z][INFO] project:list-packages --> 200 (284 ms)
+[2026-11-06T11:56:51.024Z][INFO] project:list-packages --> 200 (304 ms)
+[2026-11-06T11:56:53.561Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-11-06T11:56:53.750Z][INFO] project:list-packages --> 200 (189 ms)
+[2026-11-06T11:56:53.757Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-11-06T11:56:53.760Z][INFO] config:project:get-registries --> 200 (3 ms)
+[2026-11-06T11:56:58.830Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-11-06T11:56:59.028Z][INFO] project:list-packages --> 200 (198 ms)
+[2026-11-06T11:57:02.727Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-11-06T11:57:05.259Z][INFO] project:list-packages --> 200 (2532 ms)
+[2026-11-06T12:31:53.707Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-11-06T12:31:53.904Z][INFO] project:list-packages --> 200 (197 ms)
+[2026-11-06T12:31:54.142Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-11-06T12:31:54.318Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-11-06T12:31:54.329Z][INFO] project:list-packages --> 200 (187 ms)
+[2026-11-06T12:31:54.330Z][INFO] config:project:get-registries --> 200 (11 ms)
+[2026-11-06T12:42:34.141Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-11-06T12:42:34.314Z][INFO] project:list-packages --> 200 (174 ms)
+[2026-11-06T12:42:34.599Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-11-06T12:42:34.765Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-11-06T12:42:34.784Z][INFO] project:list-packages --> 200 (185 ms)
+[2026-11-06T12:42:34.784Z][INFO] config:project:get-registries --> 200 (19 ms)
+[2026-11-06T13:02:37.590Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-11-06T13:02:37.758Z][INFO] project:list-packages --> 200 (167 ms)
+[2026-11-06T13:02:38.031Z][INFO] project:list-packages <-- Request received
+params: {}
+[2026-11-06T13:02:38.205Z][INFO] config:project:get-registries <-- Request received
+params: {}
+[2026-11-06T13:02:38.214Z][INFO] project:list-packages --> 200 (184 ms)
+[2026-11-06T13:02:38.215Z][INFO] config:project:get-registries --> 200 (10 ms)
