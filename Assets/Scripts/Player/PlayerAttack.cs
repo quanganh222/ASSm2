@@ -18,12 +18,14 @@ namespace Metroidvania.Gameplay
 
         private PlayerJump playerJump;
         private PlayerMotor2D motor;
+        private PlayerAttackHitbox hitbox;
         private int nextGroundAttack;
 
         private void Awake()
         {
             playerJump = GetComponent<PlayerJump>();
             motor = GetComponent<PlayerMotor2D>();
+            hitbox = GetComponentInChildren<PlayerAttackHitbox>();
             if (animator == null)
                 animator = GetComponentInChildren<Animator>();
 
@@ -44,6 +46,8 @@ namespace Metroidvania.Gameplay
                 return;
 
             bool isGrounded = playerJump.IsGrounded;
+            if (hitbox != null)
+                hitbox.BeginAttack();
             animator.SetFloat(AttackTypeHash, isGrounded ? nextGroundAttack : 2f);
             animator.SetTrigger(AttackHash);
 

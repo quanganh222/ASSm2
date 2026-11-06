@@ -36,6 +36,12 @@ namespace Metroidvania.Gameplay
                 movement = GetComponentInParent<PlayerMovement>();
         }
 
+        // Reset once per swing, not once per Animation Event or collider.
+        public void BeginAttack()
+        {
+            hitTargets.Clear();
+        }
+
         // Called by an Animation Event on the frame where the slash connects.
         public void Hit()
         {
@@ -75,12 +81,11 @@ namespace Metroidvania.Gameplay
 
         private void ApplyHits(Collider2D[] colliders)
         {
-            hitTargets.Clear();
             foreach (Collider2D targetCollider in colliders)
             {
                 var target = targetCollider.GetComponentInParent<EnemyTrainingDummy>();
                 if (target != null && hitTargets.Add(target))
-                    target.ReceiveHit();
+                    target.ReceiveHitFrom(movement.transform.position);
             }
         }
 

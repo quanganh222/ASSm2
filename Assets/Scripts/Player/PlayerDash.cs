@@ -16,8 +16,10 @@ namespace Metroidvania.Gameplay
         [SerializeField, Min(0.01f)] private float dashDuration = 0.16f;
         [SerializeField, Min(0f)] private float dashCooldown = 0.45f;
         [SerializeField] private Animator dashAnimator;
+        [SerializeField,Min(0f)] private float energyCost = 10f;
 
         private PlayerMotor2D motor;
+        private PlayerEnergy energy;
         private PlayerMovement movement;
         private bool dashRequested;
         private float dashEndTime;
@@ -27,6 +29,7 @@ namespace Metroidvania.Gameplay
         {
             motor = GetComponent<PlayerMotor2D>();
             movement = GetComponent<PlayerMovement>();
+            energy = GetComponent<PlayerEnergy>();
         }
 
         private void Update()
@@ -45,6 +48,7 @@ namespace Metroidvania.Gameplay
 
             if (!movement.isActiveAndEnabled || motor.IsDashing || Time.fixedTime < nextDashTime)
                 return;
+            if (energy != null && !energy.TrySpend(energyCost)) return;
 
             float direction = movement.FacingRight ? 1f : -1f;
             motor.BeginDash(direction * dashSpeed);

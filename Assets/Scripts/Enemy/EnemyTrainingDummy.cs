@@ -14,6 +14,8 @@ namespace Metroidvania.Gameplay
         [SerializeField, Min(0.01f)] private float hitFlashDuration = 0.15f;
 
         private int hitsTaken;
+        public int MaxHealth => hitsToDefeat;
+        public int CurrentHealth => Mathf.Max(0, hitsToDefeat - hitsTaken);
         public bool IsDefeated => hitsTaken >= hitsToDefeat;
         public event Action HitReceived;
         private Color originalColor;
@@ -29,13 +31,22 @@ namespace Metroidvania.Gameplay
                 originalColor = spriteRenderer.color;
         }
 
-        public void ReceiveHit()
+        public void ReceiveHit() => ReceiveHitFrom(transform.position + Vector3.left);
+
+        public void ReceiveHitFrom(Vector2 attackerPosition)
         {
             if (hitsTaken >= hitsToDefeat) return;
 
             hitsTaken++;
             HitReceived?.Invoke();
             bool defeated = hitsTaken >= hitsToDefeat;
+            var explosion = GetComponent<EnemyExplosion>();
+            var knockback = GetComponent<EnemyKnockback>();
+            if (!defeated && (explosion == null || !explosion.IsArmed) && knockback != null)
+            {
+                knockback.PushAwayFrom(attackerPosition);
+            }
+                
             if (defeated && despawnOnDefeat)
                 Destroy(gameObject, despawnDelay);
             if (animator != null)

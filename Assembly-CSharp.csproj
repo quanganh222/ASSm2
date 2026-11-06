@@ -53,20 +53,29 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.5.6f1\Editor\Data\BCLExtensions\TargetingPacks\netstandard2.1\analyzers\dotnet\roslyn4.0\cs\System.Text.Json.SourceGeneration.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Enemy\sau\EnemyExplosion.cs" />
-    <Compile Include="Assets\Scripts\Enemy\sau\EnemyTrainingDummy.cs" />
-    <Compile Include="Assets\Scripts\Enemy\sau\EnemyChase.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyPatrol.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyKnockback.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyWebProjectile.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyChase.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerHealthBarUI.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerEnergyBarUI.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerJumpEditor.cs" />
-    <Compile Include="Assets\Scripts\Enemy\nhen\EnemyWebProjectile.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyBatFlight.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAttackHitbox.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerDash.cs" />
-    <Compile Include="Assets\Scripts\Enemy\nhen\EnemyWebShooter.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyMeleeAttack.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMotor2D.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerHitDeath.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAttack.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyHealthBarUI.cs" />
+    <Compile Include="Assets\Scripts\Enemy\BossCombat.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyTrainingDummy.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerJump.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyWebShooter.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyExplosion.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerEnergy.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAnimation.cs" />
   </ItemGroup>
   <ItemGroup>

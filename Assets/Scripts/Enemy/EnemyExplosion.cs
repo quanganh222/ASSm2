@@ -21,6 +21,7 @@ namespace Metroidvania.Gameplay
         private bool armed;
         private bool detonating;
         private bool blastApplied;
+        public bool IsArmed => armed;
 
         private void Awake()
         {
