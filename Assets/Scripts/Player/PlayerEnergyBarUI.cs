@@ -8,6 +8,7 @@ namespace Metroidvania.Gameplay
         [SerializeField] private PlayerEnergy playerEnergy;
         [SerializeField] private RectTransform energyRegion;
         [SerializeField] private RectTransform missingEnergy;
+        internal RectTransform Region => energyRegion;
 
         private void Awake()
         {
@@ -28,6 +29,8 @@ namespace Metroidvania.Gameplay
 
         private void LateUpdate()
         {
+            if (playerEnergy == null || energyRegion == null || missingEnergy == null) return;
+
             float fraction = playerEnergy.MaxEnergy > 0f
                 ? Mathf.Clamp01(playerEnergy.CurrentEnergy / playerEnergy.MaxEnergy)
                 : 0f;

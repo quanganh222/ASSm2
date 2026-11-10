@@ -10,15 +10,11 @@ namespace Metroidvania.Gameplay
     public sealed class PlayerJump : MonoBehaviour
     {
         [SerializeField, Min(0.01f)] private float jumpSpeed = 10f;
-        [SerializeField] private Transform groundCheck;
         [SerializeField] private LayerMask groundLayer;
-        [SerializeField] private Vector2 groundCheckSize = new Vector2(0.4f, 0.08f);
-        [SerializeField] private Vector2 groundCheckOffset;
-
-        private Vector3 GroundCheckCenter => groundCheck.position + (Vector3)groundCheckOffset;
 
         private PlayerMotor2D motor;
         private Rigidbody2D body;
+        private ContactFilter2D groundContactFilter;
         private bool jumpRequested;
         public bool IsGrounded { get; private set; }
 
@@ -26,11 +22,15 @@ namespace Metroidvania.Gameplay
         {
             motor = GetComponent<PlayerMotor2D>();
             body = GetComponent<Rigidbody2D>();
-            if (groundCheck == null || groundLayer.value == 0)
+            if (groundLayer.value == 0)
             {
-                Debug.LogError("PlayerJump: Assign Ground Check and Ground Layer.", this);
+                Debug.LogError("PlayerJump: Assign Ground Layer.", this);
                 enabled = false;
+                return;
             }
+
+            groundContactFilter.SetLayerMask(groundLayer);
+            groundContactFilter.SetNormalAngle(30f, 150f);
         }
 
         private void Update()
@@ -42,7 +42,7 @@ namespace Metroidvania.Gameplay
         private void FixedUpdate()
         {
             IsGrounded = body.linearVelocity.y <= 0.01f &&
-                Physics2D.OverlapBox(GroundCheckCenter, groundCheckSize, 0f, groundLayer) != null;
+                body.IsTouching(groundContactFilter);
 
             if (jumpRequested && IsGrounded && !motor.IsDashing)
             {
@@ -56,13 +56,6 @@ namespace Metroidvania.Gameplay
         {
             jumpRequested = false;
             IsGrounded = false;
-        }
-
-        private void OnDrawGizmosSelected()
-        {
-            if (groundCheck == null) return;
-            Gizmos.color = Color.yellow;
-            Gizmos.DrawWireCube(GroundCheckCenter, groundCheckSize);
         }
 
         private static bool ReadJumpPressed()

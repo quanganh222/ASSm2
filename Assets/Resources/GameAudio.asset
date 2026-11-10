@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d72af2c530a0c24634b241f60aa67fd8, type: 3}
+  m_Name: GameAudio
+  m_EditorClassIdentifier: Assembly-CSharp::Metroidvania.Gameplay.GameAudioBank
+  music: {fileID: 8300000, guid: 5721d9eaba46e1040887b05eff382476, type: 3}
+  musicVolume: 0.26
+  effectsVolume: 0.55
+  animationCues:
+  - {fileID: 8300000, guid: 05ea13822a6508a9006cf366328ddf14, type: 3}
+  - {fileID: 8300000, guid: 0ef4f7bf8dcde7ede408938389d8d93b, type: 3}
+  - {fileID: 8300000, guid: f74b889318df87709eb089e95018ea71, type: 3}
+  - {fileID: 8300000, guid: 179633e482ec8fe51844888a48032cf2, type: 3}
+  - {fileID: 8300000, guid: a6629ac06d067a2033fcbdfcd540d140, type: 3}
+  - {fileID: 8300000, guid: 080aa2957ce1b7857f54e1db7eae0b1c, type: 3}
+  - {fileID: 8300000, guid: 89ccdfe7ff50397b2292add184c8ea32, type: 3}
+  - {fileID: 8300000, guid: 8452083962829d91ed49f3ae69e2a1a2, type: 3}
+  - {fileID: 8300000, guid: e35b2d8c743be9cae0cd55d2d6184dc3, type: 3}
+  - {fileID: 8300000, guid: 4670b560d5c07d793cab4425f9dda924, type: 3}

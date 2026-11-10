@@ -22,6 +22,11 @@ namespace Metroidvania.Gameplay
         [SerializeField] private Vector2 jumpAttackOffset = new Vector2(0.25f, -0.55f);
         [SerializeField] private Vector2 jumpAttackSize = new Vector2(0.9f, 2.2f);
 
+        [Header("Damage")]
+        [SerializeField, Min(1)] private int attack1Damage = 25;
+        [SerializeField, Min(1)] private int attack2Damage = 30;
+        [SerializeField, Min(1)] private int jumpAttackDamage = 35;
+
         private readonly HashSet<EnemyTrainingDummy> hitTargets = new HashSet<EnemyTrainingDummy>();
         private Animator animator;
 
@@ -62,30 +67,33 @@ namespace Metroidvania.Gameplay
         public void HitAttack1()
         {
             if (CanHit)
-                ApplyHits(Physics2D.OverlapBoxAll(GetCenter(attack1Offset), attack1Size, 0f, enemyLayer));
+                ApplyHits(Physics2D.OverlapBoxAll(GetCenter(attack1Offset), attack1Size, 0f, enemyLayer), attack1Damage);
         }
 
         public void HitAttack2()
         {
             if (CanHit)
-                ApplyHits(Physics2D.OverlapCircleAll(GetCenter(offset), radius, enemyLayer));
+                ApplyHits(Physics2D.OverlapCircleAll(GetCenter(offset), radius, enemyLayer), attack2Damage);
         }
 
         public void HitJumpAttack()
         {
             if (CanHit)
-                ApplyHits(Physics2D.OverlapBoxAll(GetCenter(jumpAttackOffset), jumpAttackSize, 0f, enemyLayer));
+                ApplyHits(Physics2D.OverlapBoxAll(GetCenter(jumpAttackOffset), jumpAttackSize, 0f, enemyLayer), jumpAttackDamage);
         }
 
-        private bool CanHit => isActiveAndEnabled && movement != null && movement.isActiveAndEnabled;
+        private bool CanHit => isActiveAndEnabled && movement != null && movement.isActiveAndEnabled &&
+            GameManager.Instance?.RunEnded != true;
 
-        private void ApplyHits(Collider2D[] colliders)
+        private void ApplyHits(Collider2D[] colliders, int damage)
         {
             foreach (Collider2D targetCollider in colliders)
             {
                 var target = targetCollider.GetComponentInParent<EnemyTrainingDummy>();
-                if (target != null && hitTargets.Add(target))
-                    target.ReceiveHitFrom(movement.transform.position);
+                if (target == null || target.IsDefeated || !hitTargets.Add(target))
+                    continue;
+
+                target.ReceiveHitFrom(movement.transform.position, damage);
             }
         }
 
