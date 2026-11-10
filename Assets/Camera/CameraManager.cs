@@ -1,6 +1,7 @@
 using UnityEngine;
 using Unity.Cinemachine;
 
+// Mỗi khu vực có camera Cinemachine riêng. Camera thật lấy khung hình từ camera ảo đang được ưu tiên.
 public class CameraManager : MonoBehaviour
 {
     [Header("All Cameras")]
@@ -26,6 +27,7 @@ public class CameraManager : MonoBehaviour
     private void ConfigureOutputCamera()
     {
         Camera output = null;
+        // Chỉ giữ Audio Listener trên camera xuất hình để tránh hai listener khi mở nhiều scene.
         var physical = Object.FindObjectsByType<Camera>(FindObjectsInactive.Exclude);
         foreach (var camera in physical)
             if (camera.GetComponent<CinemachineBrain>() != null &&
@@ -48,8 +50,7 @@ public class CameraManager : MonoBehaviour
         if (actor == null) return;
         player = actor.transform;
 
-        // Select the map containing the player instead of relying on saved
-        // camera priority/activation order from another scene.
+        // Chọn camera theo vùng giới hạn gần Player nhất để tránh giữ camera của map cũ.
         cameras = Object.FindObjectsByType<CinemachineCamera>(FindObjectsInactive.Exclude);
         CinemachineCamera nearest = null;
         float best = float.PositiveInfinity;

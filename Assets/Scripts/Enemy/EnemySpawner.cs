@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace Metroidvania.Gameplay
 {
+    // Tạo quái ngay khi map bắt đầu để quái đã có mặt lúc Player đi tới. Có thể chọn prefab cố định hoặc bốc ngẫu nhiên.
     [DisallowMultipleComponent]
     [DefaultExecutionOrder(1000)]
     public sealed class EnemySpawner : MonoBehaviour
@@ -55,6 +56,7 @@ namespace Metroidvania.Gameplay
                 groundHits[0].fraction == 0f)
                 return position;
 
+            // Dùng mặt sàn và mép dưới collider để đặt quái mặt đất. Dơi được đặt cao hơn sàn theo cấu hình.
             float floorY = groundHits[0].point.y;
             if (prefab.TryGetComponent<EnemyBatFlight>(out _))
                 position.y = floorY + batHeightAboveGround;

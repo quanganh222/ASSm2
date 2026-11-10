@@ -13,6 +13,7 @@ namespace Metroidvania.Gameplay
         private PlayerHealth targetHealth;
         private bool spent;
 
+        // Lưu mục tiêu lúc bắn. Đạn chỉ gây sát thương và tự hủy khi va đúng Player đã được chỉ định.
         public void Launch(Vector2 direction, Transform target)
         {
             targetHealth = target.GetComponent<PlayerHealth>();
@@ -36,6 +37,7 @@ namespace Metroidvania.Gameplay
                 other.GetComponentInParent<PlayerHealth>() != targetHealth)
                 return;
 
+            // Đánh dấu đã trúng trước khi trừ máu vì Destroy sẽ dọn object vào cuối frame.
             spent = true;
             targetHealth.TakeDamage(damage);
             Destroy(gameObject);

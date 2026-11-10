@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 namespace Metroidvania.Gameplay
 {
+    // Giữ điểm, HUD và kết quả của một lượt chơi xuyên các map.
     public sealed class GameManager : MonoBehaviour
     {
         private const string FirstMap = "Map1";
@@ -56,6 +57,7 @@ namespace Metroidvania.Gameplay
             }
         }
 
+        // Mỗi lần ghi nhận hạ quái cộng 10 điểm và mở quyền hồi máu cho Player.
         public void AwardKill()
         {
             if (RunEnded) return;
@@ -112,6 +114,7 @@ namespace Metroidvania.Gameplay
             StartCoroutine(ShowResult(won, animationTime));
         }
 
+        // Chờ animation kết thúc và cổng chuyển map hoàn tất rồi mới dừng game để hiện kết quả.
         private IEnumerator ShowResult(bool won, float animationTime)
         {
             yield return new WaitForSecondsRealtime(animationTime);
@@ -160,6 +163,7 @@ namespace Metroidvania.Gameplay
             if (SceneTransitionManager.Instance != null)
                 SceneTransitionManager.Instance.ClearRunObjects();
 
+            // Chờ các object tồn tại xuyên scene được dọn trước khi nạp scene tiếp theo.
             yield return null;
             Instance = null;
             SceneManager.LoadScene(scene, LoadSceneMode.Single);
@@ -168,6 +172,7 @@ namespace Metroidvania.Gameplay
     }
 
 
+    // Tạo các thành phần UI của lượt chơi bằng code, gồm điểm, số sát thương và bảng kết quả.
     internal sealed class RunHud
     {
         private static readonly Color Accent = new Color32(231, 179, 109, 255);

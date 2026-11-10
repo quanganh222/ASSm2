@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// Bệ đi qua lại giữa vị trí đặt trong scene và điểm phía trên. Player đứng trên mặt bệ sẽ được kéo đi cùng.
 public class MovingPlatform2D : MonoBehaviour
 {
     [Header("Cài đặt di chuyển")]

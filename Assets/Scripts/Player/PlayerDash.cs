@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 namespace Metroidvania.Gameplay
 {
+    // Đọc phím lướt theo frame, rồi bắt đầu và kết thúc lướt theo bước vật lý.
     [DisallowMultipleComponent]
     [DefaultExecutionOrder(-50)]
     [RequireComponent(typeof(PlayerMotor2D), typeof(PlayerMovement))]
@@ -48,6 +49,7 @@ namespace Metroidvania.Gameplay
 
             if (!movement.isActiveAndEnabled || motor.IsDashing || Time.fixedTime < nextDashTime)
                 return;
+            // Chỉ trừ năng lượng sau khi đã qua các điều kiện về điều khiển và hồi chiêu.
             if (energy != null && !energy.TrySpend(energyCost)) return;
 
             float direction = movement.FacingRight ? 1f : -1f;
@@ -57,6 +59,7 @@ namespace Metroidvania.Gameplay
                 dashAnimator.SetBool(IsDashingHash, true);
         }
 
+        // Nếu mất điều khiển giữa lúc lướt, kết thúc dash để trả trọng lực về giá trị cũ.
         private void OnDisable()
         {
             dashRequested = false;

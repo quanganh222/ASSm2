@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 
+// Nạp các khu vực bổ sung bằng Additive để giữ scene hiện tại.
 public class ChunkManager : MonoBehaviour
 {
     private HashSet<string> loadingChunks = new HashSet<string>();
@@ -10,6 +11,7 @@ public class ChunkManager : MonoBehaviour
     public void LoadChunk(string chunkName)
     {
         if (string.IsNullOrWhiteSpace(chunkName) || !Application.CanStreamedLevelBeLoaded(chunkName)) return;
+        // Chặn yêu cầu trùng ngay cả khi chunk đang tải và chưa được Unity đánh dấu là đã nạp.
         Scene chunk = SceneManager.GetSceneByName(chunkName);
 
         if (chunk.isLoaded || loadingChunks.Contains(chunkName))

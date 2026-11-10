@@ -13,6 +13,7 @@ namespace GameplayTests
     public sealed class WinReloadTests
     {
         [UnityTest]
+        // Lặp lại luồng thắng và bấm Reload hai lần để phát hiện trạng thái UI còn sót từ lượt trước.
         public IEnumerator WinningAndClickingReloadRestartsMap3Twice()
         {
             yield return SceneManager.LoadSceneAsync("Map3");

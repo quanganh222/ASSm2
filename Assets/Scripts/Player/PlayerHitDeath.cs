@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace Metroidvania.Gameplay
 {
+    // Phát phản ứng trúng đòn hoặc chết theo trạng thái do PlayerHealth cập nhật.
     [DisallowMultipleComponent]
     public sealed class PlayerHitDeath : MonoBehaviour
     {
@@ -36,6 +37,7 @@ namespace Metroidvania.Gameplay
             if (IsDead) return;
             IsDead = true;
 
+            // Tắt các script điều khiển, giữ Animator hoạt động để phát hết clip chết.
             DisableControl(GetComponent<PlayerDash>());
             DisableControl(GetComponent<PlayerAttack>());
             DisableControl(GetComponent<PlayerJump>());

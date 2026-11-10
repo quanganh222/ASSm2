@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// Cổng lưu Player đang ở trong vùng trigger. Chỉ khi ở trong vùng và nhấn F thì mới gọi chuyển map.
 public class PortalTrigger : MonoBehaviour
 {
     private bool playerInRange = false;

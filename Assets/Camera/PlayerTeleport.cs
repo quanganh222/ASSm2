@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// Mỗi cổng khai báo scene đến và tag điểm xuất hiện. SceneTransitionManager xử lý quá trình tải.
 public class PlayerTeleport : MonoBehaviour
 {
     [Header("Teleport Settings")]

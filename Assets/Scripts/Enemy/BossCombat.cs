@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace Metroidvania.Gameplay
 {
+    // Boss chọn chém khi Player ở gần và phun laser khi ở xa hơn. Mỗi đòn có vùng trúng riêng.
     [DisallowMultipleComponent]
     [RequireComponent(typeof(Rigidbody2D), typeof(Animator), typeof(EnemyTrainingDummy))]
     public sealed class BossCombat : MonoBehaviour
@@ -105,6 +106,7 @@ namespace Metroidvania.Gameplay
             }
         }
 
+        // Đặt các Animation Event này ở frame vệt chém hoặc tia laser thực sự chạm vùng gây sát thương.
         public void SlashHit() => ApplyHit(Slash, slashOffset, slashSize, slashDamage);
         public void LaserHit() => ApplyHit(Laser, laserOffset, laserSize, laserDamage);
 
@@ -113,6 +115,7 @@ namespace Metroidvania.Gameplay
             if (attackState != expectedAttack || hitApplied || health.IsDefeated || !HasLivingPlayer)
                 return;
 
+            // Chốt lần kiểm tra cho cả đòn để event lặp hoặc nhiều collider không làm Player mất máu nhiều lần.
             hitApplied = true;
             foreach (Collider2D collider in Physics2D.OverlapBoxAll(HitCenter(offset), size, 0f))
             {

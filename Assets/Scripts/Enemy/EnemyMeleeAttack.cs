@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace Metroidvania.Gameplay
 {
+    // Điều phối đòn chém gần: ngừng đuổi, quay về phía Player, phát clip rồi trả lại quyền đuổi.
     [DisallowMultipleComponent]
     [RequireComponent(typeof(EnemyChase), typeof(Animator), typeof(EnemyTrainingDummy))]
     public sealed class EnemyMeleeAttack : MonoBehaviour
@@ -52,6 +53,7 @@ namespace Metroidvania.Gameplay
             animator.SetTrigger(Attack);
         }
 
+        // Chỉ kiểm tra vùng chém ở frame Animation Event để Player có thể né dù đã vào tầm ra đòn.
         public void MeleeHit()
         {
             if (!attacking || hitChecked || health.IsDefeated || !chase.HasLivingTarget) return;

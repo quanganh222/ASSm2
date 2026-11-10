@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 namespace Metroidvania.Gameplay
 {
+    // Hiện số sát thương tại điểm trúng đòn. Chữ nổi lên, mờ dần và tự dọn khi đổi scene.
     [DefaultExecutionOrder(1000)]
     public sealed class DamageNumber : MonoBehaviour
     {
@@ -51,6 +52,7 @@ namespace Metroidvania.Gameplay
                 return;
             }
 
+            // Đổi tọa độ thế giới sang tọa độ Canvas mỗi frame để chữ bám đúng điểm khi camera di chuyển.
             Vector3 screen = camera.WorldToScreenPoint(worldPosition);
             label.enabled = screen.z > 0f;
             if (label.enabled && RectTransformUtility.ScreenPointToLocalPointInRectangle(

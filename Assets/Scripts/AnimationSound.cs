@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace Metroidvania.Gameplay
 {
+    // Đặt bộ nhận Animation Event cùng object với Animator để phát tiếng đúng frame của động tác.
     [DisallowMultipleComponent]
     public sealed class AnimationSound : MonoBehaviour
     {
@@ -17,7 +18,7 @@ namespace Metroidvania.Gameplay
             return animator.gameObject.AddComponent<AnimationSound>();
         }
 
-        // Animation Events pass the slot in GameAudioBank.
+        // Tham số của event là vị trí clip trong danh sách âm thanh của GameAudioBank.
         public void PlayAnimationSound(int cue)
         {
             var bank = GameAudioBank.Current;

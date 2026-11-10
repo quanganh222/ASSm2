@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Metroidvania.Gameplay;
 
+// Quản lý màn hình chờ và chuyển map, đồng thời giữ Player cùng HUD để mang trạng thái sang scene mới.
 public class SceneTransitionManager : MonoBehaviour
 {
     public static SceneTransitionManager Instance;
@@ -64,7 +65,7 @@ public class SceneTransitionManager : MonoBehaviour
         if (player.TryGetComponent<PlayerEnergyBarUI>(out var energyUI))
             PreserveHud(energyUI.Region);
 
-        // This manager can be a child of a map prefab until a portal is used.
+        // Tách manager và Player khỏi cây scene để Unity giữ chúng khi nạp map mới.
         transform.SetParent(null, true);
         DontDestroyOnLoad(gameObject);
         player.SetParent(null, true);
@@ -81,8 +82,7 @@ public class SceneTransitionManager : MonoBehaviour
         var canvas = region.GetComponentInParent<Canvas>();
         if (canvas == null) return;
 
-        // A standalone HUD in the old scene must travel with the player.
-        // HUDs already nested under the player survive with its hierarchy.
+        // Giữ Canvas gốc đứng riêng. Canvas con của Player đã được giữ theo cây Player.
         var rootCanvas = canvas.rootCanvas;
         if (rootCanvas != null && rootCanvas.transform.parent == null)
         {
@@ -107,6 +107,7 @@ public class SceneTransitionManager : MonoBehaviour
         string spawnPointTag)
     {
         isTransitioning = true;
+        // Nếu scene đích có Player đặt sẵn, tắt bản đó trước khi tiếp tục với Player mang từ scene trước.
         UnityEngine.Events.UnityAction<Scene, LoadSceneMode> onLoaded = (scene, mode) =>
         {
             if (mode != LoadSceneMode.Single) return;
@@ -124,12 +125,12 @@ public class SceneTransitionManager : MonoBehaviour
         {
         Debug.Log("TransitionRoutine started!");
 
-        // 1. Show Loading Screen
+        // Hiện màn hình chờ và chặn thao tác trong lúc chuyển map.
         if (loadingScreen != null) loadingScreen.blocksRaycasts = true;
 
         yield return StartCoroutine(Fade(1f));
 
-        // 2. Load new Scene asynchronously
+        // Tải scene bất đồng bộ để vẫn cập nhật được thanh tiến trình.
         AsyncOperation operation =
             SceneManager.LoadSceneAsync(sceneName);
         Debug.Log("Loading scene: " + sceneName);
@@ -139,6 +140,7 @@ public class SceneTransitionManager : MonoBehaviour
             yield break;
         }
 
+        // Unity báo tiến độ tối đa 0.9 trước khi cho kích hoạt scene. Quy đổi mốc này thành 100% trên thanh tải.
         operation.allowSceneActivation = false;
 
         while (operation.progress < 0.9f)
@@ -160,7 +162,7 @@ public class SceneTransitionManager : MonoBehaviour
             yield return null;
 
 
-        // 4. Find SpawnPoint
+        // Tìm điểm xuất hiện trong scene đích sau khi scene đã kích hoạt.
         Debug.Log("Scene loading completed!");
         Debug.Log("Searching for SpawnPoint...");
 
@@ -190,7 +192,7 @@ public class SceneTransitionManager : MonoBehaviour
         }
 
 
-        // 5. Hide Loading Screen
+        // Đợi một frame sau khi đặt Player rồi làm mờ màn hình chờ.
         yield return null;
 
         yield return StartCoroutine(Fade(0f));
@@ -202,6 +204,7 @@ public class SceneTransitionManager : MonoBehaviour
 
         isTransitioning = false;
         }
+        // Dọn callback và bỏ chặn UI kể cả khi coroutine thoát sớm.
         finally
         {
             SceneManager.sceneLoaded -= onLoaded;
@@ -234,6 +237,7 @@ public class SceneTransitionManager : MonoBehaviour
             body.linearVelocity = Vector2.zero;
         }
 
+        // Đồng bộ collider với vị trí mới và xóa trạng thái camera cũ để camera bắt ngay điểm dịch chuyển.
         Physics2D.SyncTransforms();
         foreach (var camera in FindObjectsByType<CinemachineCamera>(FindObjectsInactive.Exclude))
             if (camera.gameObject.scene == spawnPoint.gameObject.scene && camera.Follow == player)
@@ -246,6 +250,7 @@ public class SceneTransitionManager : MonoBehaviour
         float startAlpha = loadingScreen.alpha;
         float elapsed = 0f;
 
+        // Dùng thời gian thực để hiệu ứng mờ vẫn chạy khi timeScale bằng 0.
         while (elapsed < fadeDuration)
         {
             elapsed += Time.unscaledDeltaTime;

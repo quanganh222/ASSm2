@@ -15,8 +15,8 @@ namespace GameplayTests
         private const BindingFlags Members =
             BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance;
 
-        // Unity test assemblies cannot directly reference the predefined Assembly-CSharp.
-        // Look up the existing components without changing their assembly or scene bindings.
+        // Tìm component qua reflection vì assembly test không tham chiếu trực tiếp được Assembly-CSharp.
+        // Cách này giữ nguyên assembly và tham chiếu scene của gameplay.
         private static Type GameType(string name) =>
             Type.GetType($"Metroidvania.Gameplay.{name}, Assembly-CSharp", throwOnError: true);
 
@@ -381,6 +381,7 @@ namespace GameplayTests
         [UnityTest]
         public IEnumerator WormKilledBeforeBlastDoesNotDamagePlayer() => CheckWormBlast(100, false, 100);
 
+        // Dùng chung kịch bản để so sánh đứng trong vụ nổ, né ra ngoài và chém sâu trước frame nổ.
         private IEnumerator CheckWormBlast(int attackDamage, bool escape, int expectedHp)
         {
             var player = Child("Player");
@@ -492,7 +493,7 @@ namespace GameplayTests
             Assert.That(controller, Is.Not.Null);
             var animator = actor.GetComponent<Animator>();
             animator.runtimeAnimatorController = controller;
-            // The tests invoke the hit events explicitly after checking the AI has chosen the attack.
+            // Sau khi xác nhận AI chọn đúng đòn, test tự gọi event để kiểm tra sát thương theo frame.
             animator.speed = 0f;
         }
 #endif

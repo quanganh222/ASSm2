@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace Metroidvania.Gameplay
 {
+    // Đọc năng lượng từ PlayerEnergy và vẽ phần đã mất bằng lớp phủ co giãn từ mép phải.
     [DisallowMultipleComponent]
     public sealed class PlayerEnergyBarUI : MonoBehaviour
     {

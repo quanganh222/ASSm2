@@ -6,6 +6,7 @@ using UnityEditor.IMGUI.Controls;
 
 namespace Metroidvania.Gameplay
 {
+    // Dơi chọn điểm tuần tra trong vùng bay và chuyển sang đuổi khi phát hiện Player trong vùng đó.
     [DisallowMultipleComponent]
     [RequireComponent(typeof(Rigidbody2D))]
     public sealed class EnemyBatFlight : MonoBehaviour
@@ -96,6 +97,7 @@ namespace Metroidvania.Gameplay
             {
                 destination = targetPosition;
                 FaceDirection(targetPosition.x - body.position.x);
+                // Tách tầm phát hiện khỏi tầm bắt đầu cắn. Dơi phải áp sát collider Player mới phát động đòn.
                 float startBiteDistance = Mathf.Min(attackRange, biteRadius * 0.9f);
                 if (DistanceToPlayerSquared() <= startBiteDistance * startBiteDistance)
                 {
@@ -134,6 +136,7 @@ namespace Metroidvania.Gameplay
             FaceDirection(delta.x);
         }
 
+        // Animation Event kiểm tra lại khoảng cách ở frame cắn để Player kịp né trong lúc dơi ra đòn.
         public void BatBite()
         {
             if (!attacking || biteApplied || (health != null && health.IsDefeated) ||

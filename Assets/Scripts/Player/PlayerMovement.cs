@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 namespace Metroidvania.Gameplay
 {
+    // Đọc trái/phải trong Update rồi gửi vận tốc ngang cho motor trong FixedUpdate.
     [DisallowMultipleComponent]
     [RequireComponent(typeof(PlayerMotor2D))]
     public sealed class PlayerMovement : MonoBehaviour
@@ -29,6 +30,7 @@ namespace Metroidvania.Gameplay
             horizontalInput = ReadHorizontal();
             if (horizontalInput == 0f || motor.IsDashing) return;
 
+            // Chỉ lật sprite để giữ collider ổn định. Hướng nhìn được dùng chung cho dash và hitbox.
             FacingRight = horizontalInput > 0f;
             if (spriteRenderer != null)
                 spriteRenderer.flipX = FacingRight != spriteFacesRight;

@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace Metroidvania.Gameplay
 {
+    // Sâu áp sát rồi chờ hết thời gian Fuse mới nổ. Một nhát chém có thể kích nổ sớm.
     [DisallowMultipleComponent]
     [RequireComponent(typeof(EnemyChase), typeof(Animator))]
     public sealed class EnemyExplosion : MonoBehaviour
@@ -99,12 +100,13 @@ namespace Metroidvania.Gameplay
             chase.enabled = false;
         }
 
-        // Animation Event on the first frame of the blast.
+        // Animation Event ở frame đầu thấy vụ nổ. Kiểm tra bán kính ngay tại thời điểm này.
         public void ApplyBlast()
         {
             if (!detonating || blastApplied) return;
             blastApplied = true;
 
+            // Nếu nhát chém đã kết liễu sâu trước frame nổ, chỉ giữ hiệu ứng và bỏ sát thương.
             if (trainingDummy != null && trainingDummy.IsDefeated) return;
             if (!IsTargetWithin(blastRadius)) return;
 
@@ -114,12 +116,13 @@ namespace Metroidvania.Gameplay
                 playerHitDeath.PlayHit();
         }
 
-        // Animation Event on the last visible frame.
+        // Animation Event ở frame cuối thấy vụ nổ để dọn con sâu.
         public void FinishExplosion()
         {
             if (!detonating) return;
 
             detonating = false;
+            // Ghi điểm cho vụ nổ do đòn đánh của Player hoặc khi sâu đã bị kết liễu.
             if (detonatedByHit || (trainingDummy != null && trainingDummy.IsDefeated))
                 GameManager.Instance?.AwardKill();
             Destroy(gameObject);

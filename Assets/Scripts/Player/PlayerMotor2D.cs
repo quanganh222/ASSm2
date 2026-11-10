@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace Metroidvania.Gameplay
 {
+    // Tập trung các thao tác ghi vận tốc vào một component. Dash được ưu tiên cho tới khi trả lại quyền di chuyển và nhảy.
     [DisallowMultipleComponent]
     [RequireComponent(typeof(Rigidbody2D))]
     public sealed class PlayerMotor2D : MonoBehaviour
@@ -13,7 +14,7 @@ namespace Metroidvania.Gameplay
 
         private void Awake() => body = GetComponent<Rigidbody2D>();
 
-        // Chi thay doi truc X, giu nguyen van toc nhay/roi.
+        // Chỉ đổi vận tốc ngang để chạy không cắt mất đà nhảy hoặc rơi.
         public void MoveHorizontal(float speed)
         {
             if (IsDashing) return;
@@ -23,7 +24,7 @@ namespace Metroidvania.Gameplay
             body.linearVelocity = velocity;
         }
 
-        // Chi thay doi truc Y, giu nguyen van toc di ngang.
+        // Chỉ đổi vận tốc dọc để Player vẫn di chuyển ngang khi nhảy.
         public void Jump(float speed)
         {
             if (IsDashing) return;
@@ -36,6 +37,7 @@ namespace Metroidvania.Gameplay
         {
             if (IsDashing) return;
 
+            // Lưu trọng lực đang dùng trước khi tắt nó để lướt ngang rồi trả lại đúng giá trị khi kết thúc.
             gravityBeforeDash = body.gravityScale;
             IsDashing = true;
             body.gravityScale = 0f;

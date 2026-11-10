@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace Metroidvania.Gameplay
 {
+    // Dùng chung asset GameAudio để cấu hình nhạc nền, âm lượng và các âm thanh theo Animation Event.
     public sealed class GameAudioBank : ScriptableObject
     {
         [SerializeField] private AudioClip music;
@@ -20,6 +21,7 @@ namespace Metroidvania.Gameplay
         {
             if (musicSource != null || music == null) return;
 
+            // Giữ một AudioSource xuyên scene để nhạc nối liền giữa menu và gameplay.
             var owner = new GameObject("Background Music");
             DontDestroyOnLoad(owner);
             musicSource = owner.AddComponent<AudioSource>();

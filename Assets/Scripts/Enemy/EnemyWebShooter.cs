@@ -18,6 +18,7 @@ namespace Metroidvania.Gameplay
         private float nextAttackTime;
         private bool waitingToFire;
 
+        // Nhện và bò cạp dùng cùng logic bắn. Prefab đạn và FirePoint được chỉnh riêng trên từng quái.
         private void Awake()
         {
             animator = GetComponent<Animator>();
@@ -25,6 +26,7 @@ namespace Metroidvania.Gameplay
             health = GetComponent<EnemyTrainingDummy>();
         }
 
+        // Chỉ phát động bắn khi mục tiêu còn sống, đã hết hồi chiêu và Animator đang ở state Run.
         private void Update()
         {
             Transform target = chase.Target;
@@ -44,7 +46,7 @@ namespace Metroidvania.Gameplay
             animator.SetTrigger(AttackHash);
         }
 
-        // Animation Event on the frame where the spider releases the web.
+        // Animation Event ở frame nhả đạn hoặc tơ.
         public void ShootWeb()
         {
             Transform target = chase.Target;
@@ -58,7 +60,7 @@ namespace Metroidvania.Gameplay
                 (health != null && health.IsDefeated)) return;
 
             Vector3 spawn = firePoint != null ? firePoint.position : transform.position;
-            // EnemyChase flips only the sprite. Mirror the mouth offset separately.
+            // EnemyChase chỉ lật sprite, nên điểm nhả đạn phải đổi bên riêng.
             float side = target.position.x >= transform.position.x ? 1f : -1f;
             spawn.x = transform.position.x + Mathf.Abs(spawn.x - transform.position.x) * side;
             Vector2 direction = (Vector2)(target.position - spawn);

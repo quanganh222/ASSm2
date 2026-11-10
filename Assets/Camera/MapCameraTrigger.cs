@@ -1,6 +1,7 @@
 using UnityEngine;
 using Unity.Cinemachine;
 
+// Dùng vùng trigger để chọn camera của khu vực Player vừa bước vào.
 public class MapCameraTrigger : MonoBehaviour
 {
     public CameraManager cameraManager;

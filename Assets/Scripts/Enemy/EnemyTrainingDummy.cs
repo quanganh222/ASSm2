@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace Metroidvania.Gameplay
 {
+    // Component máu dùng chung cho quái. Xử lý nhận sát thương, nháy màu, đẩy lùi và báo hạ gục.
     [DisallowMultipleComponent]
     public sealed class EnemyTrainingDummy : MonoBehaviour
     {
@@ -42,6 +43,7 @@ namespace Metroidvania.Gameplay
             int applinedDamege = Mathf.Min(damege, CurrentHealth);
             CurrentHealth -= applinedDamege;
             GameManager.Instance?.ShowDamage(transform, applinedDamege, playerTookDamage: false);
+            // Báo trúng đòn sau khi cập nhật máu để sâu xử lý kích nổ dựa trên trạng thái mới.
             HitReceived?.Invoke();
             bool defeated = IsDefeated;
             var explosion = GetComponent<EnemyExplosion>();
@@ -61,6 +63,7 @@ namespace Metroidvania.Gameplay
                     animator.SetTrigger("Hit");
             }
 
+            // Sâu báo điểm ở cuối clip nổ. Các quái còn lại báo ngay khi máu về 0.
             if (defeated && explosion == null)
             {
                 GameManager.Instance?.AwardKill();
@@ -78,6 +81,7 @@ namespace Metroidvania.Gameplay
             ApplyFlashColor();
         }
 
+        // Áp lại màu nháy sau cập nhật animation để màu trúng đòn vẫn thấy khi Animator đổi sprite hoặc màu.
         private void LateUpdate()
         {
             if (!isFlashing) return;

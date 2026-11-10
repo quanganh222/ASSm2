@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace Metroidvania.Gameplay
 {
+    // Quản lý năng lượng dùng cho dash. Mỗi lần tiêu hao thành công sẽ lùi thời điểm bắt đầu hồi.
     [DisallowMultipleComponent]
     public sealed class PlayerEnergy : MonoBehaviour
     {
@@ -30,6 +31,7 @@ namespace Metroidvania.Gameplay
             currentEnergy = Mathf.Min(maxEnergy, currentEnergy + regenerationPerSecond * Time.deltaTime);
         }
 
+        // Trả về false nếu chi phí không hợp lệ, Player đã chết hoặc năng lượng còn lại không đủ.
         public bool TrySpend(float amount)
         {
             if (amount < 0f || (death != null && death.IsDead) || currentEnergy < amount)

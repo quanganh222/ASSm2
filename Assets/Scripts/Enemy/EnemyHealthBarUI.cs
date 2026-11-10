@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 namespace Metroidvania.Gameplay
 {
+    // Hiện máu trên đầu quái lúc còn sống. Độ đầy của Slider lấy từ lượng máu thực tế.
     [DisallowMultipleComponent]
     public sealed class EnemyHealthBarUI : MonoBehaviour
     {
@@ -54,8 +55,7 @@ namespace Metroidvania.Gameplay
             if (enemySprite == null || worldCanvas == null || sliderRect == null ||
                 worldCanvas.renderMode != RenderMode.WorldSpace) return;
 
-            // SpriteRenderer.flipX mirrors the picture around its pivot, but does
-            // not mirror the child Canvas. Follow the visible bounds instead.
+            // flipX chỉ lật hình. Dùng bounds của sprite để căn thanh máu theo hình đang hiển thị.
             Bounds bounds = enemySprite.bounds;
             Vector3 target = new Vector3(bounds.center.x,
                 bounds.max.y + heightAboveEnemy, enemySprite.transform.position.z);
@@ -68,8 +68,7 @@ namespace Metroidvania.Gameplay
 
         private void Refresh()
         {
-            // Background and fill area share the same centered track. Remove
-            // authored asymmetric offsets, then use equal padding at both ends.
+            // Căn nền và vùng tô trên cùng một trục, chừa viền trái và phải bằng nhau.
             if (backgroundRect != null)
                 SetTrackRect(backgroundRect, Vector2.zero);
             if (fillAreaRect != null && fillAreaRect != sliderRect)
@@ -81,8 +80,7 @@ namespace Metroidvania.Gameplay
             healthSlider.gameObject.SetActive(!enemy.IsDefeated);
             healthSlider.SetValueWithoutNotify(ratio);
 
-            // Slider drives anchors. Extra pixel width/position stretches the fill
-            // beyond its parent, so keep its offsets zero even on the first frame.
+            // Đặt offset của Fill về 0 để phần đỏ chỉ rộng theo tỷ lệ máu, kể cả frame đầu.
             RectTransform fill = healthSlider.fillRect;
             if (fill != null)
             {

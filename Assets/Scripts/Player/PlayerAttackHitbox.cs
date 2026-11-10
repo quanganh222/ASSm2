@@ -7,6 +7,7 @@ using UnityEditor.IMGUI.Controls;
 
 namespace Metroidvania.Gameplay
 {
+    // Ba đòn có vùng kiểm tra và sát thương riêng để khớp với đường kiếm trong từng clip.
     [DisallowMultipleComponent]
     public sealed class PlayerAttackHitbox : MonoBehaviour
     {
@@ -41,13 +42,13 @@ namespace Metroidvania.Gameplay
                 movement = GetComponentInParent<PlayerMovement>();
         }
 
-        // Reset once per swing, not once per Animation Event or collider.
+        // Làm mới danh sách trúng đòn khi bắt đầu một nhát chém.
         public void BeginAttack()
         {
             hitTargets.Clear();
         }
 
-        // Called by an Animation Event on the frame where the slash connects.
+        // Animation Event ở frame trúng đòn chọn vùng chém theo AttackType hiện tại.
         public void Hit()
         {
             switch (CurrentAttack)
@@ -85,6 +86,7 @@ namespace Metroidvania.Gameplay
         private bool CanHit => isActiveAndEnabled && movement != null && movement.isActiveAndEnabled &&
             GameManager.Instance?.RunEnded != true;
 
+        // Tìm component máu ở object cha của collider để nhiều collider trên cùng một quái chỉ tính một lần mỗi nhát.
         private void ApplyHits(Collider2D[] colliders, int damage)
         {
             foreach (Collider2D targetCollider in colliders)
@@ -131,6 +133,7 @@ namespace Metroidvania.Gameplay
                 SceneView.RepaintAll();
         }
 
+        // Cho phép kéo trực tiếp vùng chém trong Scene view và lưu thay đổi vào các trường Inspector.
         private void OnSceneGUI()
         {
             serializedObject.Update();

@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 namespace Metroidvania.Gameplay
 {
+    // Chọn đòn từ input và trạng thái Player. Animation Event ở frame vung kiếm sẽ gọi phần tính trúng đòn.
     [DisallowMultipleComponent]
     [RequireComponent(typeof(PlayerJump), typeof(PlayerMotor2D))]
     public sealed class PlayerAttack : MonoBehaviour
@@ -45,6 +46,7 @@ namespace Metroidvania.Gameplay
             if (state != LocomotionHash && state != JumpingHash)
                 return;
 
+            // Hai đòn dưới đất luân phiên qua AttackType 0 và 1. Đòn trên không dùng 2 và giữ nguyên thứ tự dưới đất.
             bool isGrounded = playerJump.IsGrounded;
             if (hitbox != null)
                 hitbox.BeginAttack();

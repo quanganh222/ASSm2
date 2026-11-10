@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace Metroidvania.Gameplay
 {
+    // Đưa vận tốc và trạng thái chạm đất vào Animator. Blend Tree dùng Speed cho Idle/Run và VerticalSpeed cho Jump/Fall.
     [DisallowMultipleComponent]
     [RequireComponent(typeof(Rigidbody2D))]
     

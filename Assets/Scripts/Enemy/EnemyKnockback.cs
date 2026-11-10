@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace Metroidvania.Gameplay
 {
+    // Đẩy quái ra xa điểm đánh trong thời gian ngắn. AI dùng IsActive để nhường quyền ghi vận tốc.
     [DisallowMultipleComponent]
     [RequireComponent(typeof(Rigidbody2D))]
     public sealed class EnemyKnockback : MonoBehaviour
@@ -24,6 +25,7 @@ namespace Metroidvania.Gameplay
             if (direction.sqrMagnitude < 0.0001f)
                 direction = Vector2.right;
 
+            // Quái bay bị đẩy theo cả hai trục. Quái mặt đất giữ vận tốc dọc để vật lý vẫn xử lý rơi.
             if (flyingEnemy)
                 body.linearVelocity = direction.normalized * pushSpeed;
             else

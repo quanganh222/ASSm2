@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// Khi Player bước vào vùng trigger, gửi tên chunk đã gán trong Inspector cho ChunkManager.
 public class ChunkTrigger : MonoBehaviour
 {
     public ChunkManager chunkManager;

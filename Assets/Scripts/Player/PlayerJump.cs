@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 namespace Metroidvania.Gameplay
 {
+    // Giữ yêu cầu nhảy từ Update đến bước vật lý kế tiếp để tránh bỏ sót lần bấm Space.
     [DisallowMultipleComponent]
     [RequireComponent(typeof(PlayerMotor2D))]
     public sealed class PlayerJump : MonoBehaviour
@@ -30,17 +31,18 @@ namespace Metroidvania.Gameplay
             }
 
             groundContactFilter.SetLayerMask(groundLayer);
+            // Chỉ nhận tiếp xúc hướng lên từ lớp Ground để bám sàn và dốc khi xét chạm đất.
             groundContactFilter.SetNormalAngle(30f, 150f);
         }
 
         private void Update()
         {
-            // Giu lenh nhay cho den buoc vat ly tiep theo.
             jumpRequested |= ReadJumpPressed();
         }
 
         private void FixedUpdate()
         {
+            // Dùng tiếp xúc thật của Rigidbody2D và loại lúc Player đang đi lên để tránh nhảy liên tiếp trên không.
             IsGrounded = body.linearVelocity.y <= 0.01f &&
                 body.IsTouching(groundContactFilter);
 

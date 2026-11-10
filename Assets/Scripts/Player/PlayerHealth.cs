@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace Metroidvania.Gameplay
 {
+    // Quản lý máu, điều kiện hồi sau khi hạ quái và lớp phủ của thanh máu Player.
     [DisallowMultipleComponent]
     [RequireComponent(typeof(PlayerHitDeath))]
     public sealed class PlayerHealth : MonoBehaviour
@@ -47,6 +48,7 @@ namespace Metroidvania.Gameplay
             if (CurrentHealth <= 0 || reactions.IsDead || GameManager.Instance?.RunEnded == true)
                 return;
 
+            // Hạ quái mở quyền hồi. Nếu đang hồi mà trúng đòn, thời gian chờ được tính lại từ lúc nhận sát thương.
             regenerationArmed = true;
             RestartRegenerationDelay();
         }
@@ -63,6 +65,7 @@ namespace Metroidvania.Gameplay
                 GameManager.Instance?.RunEnded == true || Time.time < regenerateAfter)
                 return;
 
+            // Tích lũy phần lẻ theo thời gian để tốc độ hồi máu nguyên không phụ thuộc số frame.
             float healingTime = Mathf.Min(Time.deltaTime, Time.time - regenerateAfter);
             healingProgress += healingTime * regenerationPerSecond;
             int restored = Mathf.Min(MaxHealth - CurrentHealth, Mathf.FloorToInt(healingProgress));
@@ -87,6 +90,7 @@ namespace Metroidvania.Gameplay
             if (damage <= 0 || CurrentHealth <= 0 || reactions.IsDead || GameManager.Instance?.RunEnded == true)
                 return;
 
+            // Giới hạn sát thương bằng lượng máu còn lại để số sát thương hiển thị đúng lượng máu thực mất.
             int appliedDamage = Mathf.Min(damage, currentHealth);
             currentHealth -= appliedDamage;
             if (regenerationArmed)

@@ -1,8 +1,9 @@
 using Metroidvania.Gameplay;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement; // Bắt buộc phải có dòng này để chuyển Scene
+using UnityEngine.SceneManagement;
 
+// Nút Play mở GamePlay. Nút Exit ở menu mới thoát ứng dụng.
 public class MainMenuUI : MonoBehaviour
 {
     [SerializeField] private Button playButton;
@@ -15,6 +16,7 @@ public class MainMenuUI : MonoBehaviour
         if (exitButton != null) exitButton.onClick.AddListener(OnExitButtonClicked);
     }
 
+    // Gỡ listener khi menu bị tắt để mỗi nút chỉ gọi một lần khi bật lại.
     private void OnDisable()
     {
         if (playButton != null) playButton.onClick.RemoveListener(OnPlayButtonClicked);
@@ -23,8 +25,7 @@ public class MainMenuUI : MonoBehaviour
 
     private void OnPlayButtonClicked()
     {
-        // Chuyển từ Scene MainMenu sang Scene GamePlay
-        SceneManager.LoadScene("GamePlay"); // Nhập chính xác tên Scene Gameplay của bạn
+        SceneManager.LoadScene("GamePlay");
     }
 
     private void OnExitButtonClicked()

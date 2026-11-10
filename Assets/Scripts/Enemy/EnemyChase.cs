@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace Metroidvania.Gameplay
 {
+    // Quái mặt đất đuổi Player theo trục ngang khi vào tầm phát hiện và dừng ở khoảng cách đã cấu hình.
     [DisallowMultipleComponent]
     [RequireComponent(typeof(Rigidbody2D))]
     public sealed class EnemyChase : MonoBehaviour
@@ -44,6 +45,7 @@ namespace Metroidvania.Gameplay
                     targetDeath = player.GetComponent<PlayerHitDeath>();
                 }
             }
+            // Nhường vận tốc cho knockback để AI không kéo quái ngược lại ngay khi bị đẩy.
             if (knockback != null && knockback.IsActive) return;
 
             float horizontalSpeed = 0f;
