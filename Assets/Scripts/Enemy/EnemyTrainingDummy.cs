@@ -8,22 +8,24 @@ namespace Metroidvania.Gameplay
     {
         [SerializeField] private Animator animator;
         [SerializeField] private SpriteRenderer spriteRenderer;
-        [SerializeField, Min(1)] private int hitsToDefeat = 3;
+        [SerializeField, Min(1)] private int maxHealth = 100;
         [SerializeField] private bool despawnOnDefeat;
         [SerializeField, Min(0f)] private float despawnDelay = 3f;
         [SerializeField, Min(0.01f)] private float hitFlashDuration = 0.15f;
 
-        private int hitsTaken;
-        public int MaxHealth => hitsToDefeat;
-        public int CurrentHealth => Mathf.Max(0, hitsToDefeat - hitsTaken);
-        public bool IsDefeated => hitsTaken >= hitsToDefeat;
+        public int MaxHealth => maxHealth;
+        public int CurrentHealth { get; private set; }
+        public bool IsDefeated => CurrentHealth <= 0;
         public event Action HitReceived;
         private Color originalColor;
         private float flashUntil;
         private bool isFlashing;
+        private AnimationSound animationSound;
 
         private void Awake()
         {
+            CurrentHealth = maxHealth;
+            animationSound = AnimationSound.Attach(animator != null ? animator : GetComponentInChildren<Animator>());
             if (spriteRenderer == null)
                 spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 
@@ -33,13 +35,15 @@ namespace Metroidvania.Gameplay
 
         public void ReceiveHit() => ReceiveHitFrom(transform.position + Vector3.left);
 
-        public void ReceiveHitFrom(Vector2 attackerPosition)
+        public void ReceiveHitFrom(Vector2 attackerPosition, int damege = 25)
         {
-            if (hitsTaken >= hitsToDefeat) return;
+            if (damege <= 0 || IsDefeated) return;
 
-            hitsTaken++;
+            int applinedDamege = Mathf.Min(damege, CurrentHealth);
+            CurrentHealth -= applinedDamege;
+            GameManager.Instance?.ShowDamage(transform, applinedDamege, playerTookDamage: false);
             HitReceived?.Invoke();
-            bool defeated = hitsTaken >= hitsToDefeat;
+            bool defeated = IsDefeated;
             var explosion = GetComponent<EnemyExplosion>();
             var knockback = GetComponent<EnemyKnockback>();
             if (!defeated && (explosion == null || !explosion.IsArmed) && knockback != null)
@@ -55,6 +59,16 @@ namespace Metroidvania.Gameplay
                     animator.SetBool("IsDead", true);
                 else
                     animator.SetTrigger("Hit");
+            }
+
+            if (defeated && explosion == null)
+            {
+                GameManager.Instance?.AwardKill();
+                GameManager.Instance?.BossDefeated(this);
+            }
+            else if (!defeated)
+            {
+                animationSound?.PlayAnimationSound(AnimationSound.Impact);
             }
 
             if (spriteRenderer == null) return;

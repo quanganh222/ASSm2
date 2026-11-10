@@ -50,6 +50,11 @@ namespace Metroidvania.Gameplay
 
         private void FixedUpdate()
         {
+            if (player == null)
+            {
+                var target = GameObject.FindGameObjectWithTag("Player");
+                if (target != null) player = target.GetComponent<PlayerHealth>();
+            }
             if (knockback != null && knockback.IsActive) return;
             
             SetHorizontalSpeed(0f);

@@ -17,7 +17,6 @@ namespace Metroidvania.Gameplay
         private EnemyTrainingDummy trainingDummy;
         private PlayerHitDeath targetDeath;
         private EnemyKnockback knockback;
-        private EnemyPatrol patrol;
 
         public Transform Target => player;
         public bool HasLivingTarget => player != null && player.gameObject.activeInHierarchy &&
@@ -27,7 +26,6 @@ namespace Metroidvania.Gameplay
         {
             body = GetComponent<Rigidbody2D>();
             knockback = GetComponent<EnemyKnockback>();
-            patrol = GetComponent<EnemyPatrol>();
             trainingDummy = GetComponent<EnemyTrainingDummy>();
             if (player != null)
                 targetDeath = player.GetComponent<PlayerHitDeath>();
@@ -37,6 +35,15 @@ namespace Metroidvania.Gameplay
 
         private void FixedUpdate()
         {
+            if (player == null)
+            {
+                var target = GameObject.FindGameObjectWithTag("Player");
+                if (target != null)
+                {
+                    player = target.transform;
+                    targetDeath = player.GetComponent<PlayerHitDeath>();
+                }
+            }
             if (knockback != null && knockback.IsActive) return;
 
             float horizontalSpeed = 0f;
@@ -51,13 +58,7 @@ namespace Metroidvania.Gameplay
                     {
                         float speedToStop = (Mathf.Abs(toPlayer.x) - stopDistance) / Time.fixedDeltaTime;
                         horizontalSpeed = Mathf.Sign(toPlayer.x) * Mathf.Min(chaseSpeed, speedToStop);
-                                       }
-                }
-                else if (patrol != null && patrol.isActiveAndEnabled)
-                {
-                    horizontalSpeed = patrol.GetHorizontalSpeed(body.position.x);
-                    if (Mathf.Abs(horizontalSpeed) > 0.01f)
-                        FaceDirection(horizontalSpeed);
+                    }
                 }
             }
 

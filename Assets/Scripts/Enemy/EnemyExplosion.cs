@@ -21,6 +21,7 @@ namespace Metroidvania.Gameplay
         private bool armed;
         private bool detonating;
         private bool blastApplied;
+        private bool detonatedByHit;
         public bool IsArmed => armed;
 
         private void Awake()
@@ -35,13 +36,13 @@ namespace Metroidvania.Gameplay
         private void OnEnable()
         {
             if (trainingDummy != null)
-                trainingDummy.HitReceived += Detonate;
+                trainingDummy.HitReceived += DetonateFromHit;
         }
 
         private void OnDisable()
         {
             if (trainingDummy != null)
-                trainingDummy.HitReceived -= Detonate;
+                trainingDummy.HitReceived -= DetonateFromHit;
         }
 
         private void FixedUpdate()
@@ -70,6 +71,14 @@ namespace Metroidvania.Gameplay
 
             detonating = true;
             animator.SetTrigger(ExplodeHash);
+        }
+
+        private void DetonateFromHit()
+        {
+            if (detonating || !chase.HasLivingTarget) return;
+
+            detonatedByHit = true;
+            Detonate();
         }
 
         private void OnCollisionStay2D(Collision2D collision)
@@ -108,8 +117,12 @@ namespace Metroidvania.Gameplay
         // Animation Event on the last visible frame.
         public void FinishExplosion()
         {
-            if (detonating)
-                Destroy(gameObject);
+            if (!detonating) return;
+
+            detonating = false;
+            if (detonatedByHit || (trainingDummy != null && trainingDummy.IsDefeated))
+                GameManager.Instance?.AwardKill();
+            Destroy(gameObject);
         }
 
         private bool IsTargetWithin(float radius)

@@ -60,6 +60,15 @@ namespace Metroidvania.Gameplay
 
         private void FixedUpdate()
         {
+            if (player == null)
+            {
+                var target = GameObject.FindGameObjectWithTag("Player");
+                if (target != null)
+                {
+                    player = target.GetComponent<PlayerHealth>();
+                    playerColliders = target.GetComponentsInChildren<Collider2D>(true);
+                }
+            }
             if (knockback != null && knockback.IsActive) return;
             
             if (health != null && health.IsDefeated)
